@@ -7,7 +7,14 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index(){
-        echo "Home Controller Test";
+        return view('home.index');
     }
     //
+    public function test($id, $name){
+        echo "Id Number: ", $id;
+        echo "<br>Name: ", $name;
+        for($i=1;$i<=$id;$i++){
+            echo "<br>$i - $name";
+        }
+    }
 }
