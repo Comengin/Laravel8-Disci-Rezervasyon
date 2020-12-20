@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+
+    <title>Patient Information: Sign Up</title>
+    <link rel="stylesheet" href="https://www.ident.ws/template_include/pi_login_styles.css" type="text/css">
+    <link href="https://www.ident.ws/css/bootstrap3_3_5_iPadMod.css" rel="stylesheet" type="text/css">
+    <link href="https://www.ident.ws/css/mobile_style.css" rel="stylesheet" type="text/css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="https://www.ident.ws/css/adaStyle.css" type="text/css">
+    
+    <script>
+        var Message = "";
+
+        var MAX_PASSWORD_LENGTH = 9;
+
+        function togglePassword() {
+          var password1 = document.getElementById("Password1");
+          var password2 = document.getElementById("Password2");
+          if (password1.type === "password") {
+              password1.type = "text";
+              password2.type = "text";
+          } else {
+              password1.type = "password";
+              password2.type = "password";
+          }
+        }
+
+        function keyUpPassword (passwordX, passwordXLength, passwordXMaxLength) {
+            var password1 = document.getElementById(passwordX);
+
+            var length = 0;
+            if (password1 != null) {
+                length = password1.value.length;
+            }
+
+            var password1Length = document.getElementById(passwordXLength);
+            password1Length.innerHTML = length;
+
+            var passwordXMaxLength = document.getElementById(passwordXMaxLength);
+            if (length >= MAX_PASSWORD_LENGTH) {
+                passwordXMaxLength.style.color = "red";
+            } else {
+                passwordXMaxLength.style.color = "";
+            }
+        }
+    </script>
+    <script src="/template_include/validation.js"></script>
+    <script src="/template_include/pi_signup.js"></script>
+</head>
+
+<body id="ada" onLoad="startup()">
+<button class="btn btn-primary" id="ADA_button" data-state="showADA" style="height: 36px;" tabindex="1">
+    <img src="/identimages/handicap.svg" id="handicapIcon" height="20" width="20" alt=""/> High Contrast Site
+</button>
+
+<div class="wrapper">
+    <div class="logInPageHeader" >
+        <h1 style="height: 27px;">Sign Up New Patient Account</h1>
+    </div>
+    <div class="logInContentSection" style="padding-top: 0;">
+        <p>
+            Complete this form to sign up for online access to your account.
+        </p>
+
+        <div style="list-style-type:disc; font-size: .9em; margin-left: 37px;">
+            <ul>
+                <li>Account access requires approval from your dental provider</li>
+                <li>Account access may take up to 1 business day before it is available</li>
+            </ul>
+        </div>
+    </div>
+
+    <form method="post" name="SignupForm">
+        <input type="hidden" name="csrfToken" value="qGirVHCzBhQgzk5BoW81xbxE7thP2uYRHdyBcujg">
+        <div class="logInContentSection">
+            <span style="color:#CC0000;">Required fields are marked with an </span><div class="requiredAsterisk alignAsterisk">*</div><br/>
+            <div class="content">
+                <h2>New Account Information</h2>
+                <hr/>
+                <div>
+                    <label for="Username">Username </label><div class="requiredAsterisk alignAsterisk">*</div> <br>
+                    <input id="Username" maxlength="14" name="Username" size="18" type="text"
+                           value="" class="logInFormInput">
+                    <br/>
+                    <div class="formStructure">
+                        <label for="Password1">Password </label><div class="requiredAsterisk alignAsterisk">*</div> <br>
+                        <input id="Password1" maxlength="9" name="Password1" size="18" type="password"
+                               onkeyup="keyUpPassword('Password1','Password1Length','Password1MaxLength');" value="" class="logInFormInput">
+                        <span id="Password1Length" style="font-size: 13px;">0</span><span style="font-size: 13px;"> characters entered,</span>
+                        <span id="Password1MaxLength" style="font-size: 13px; text-decoration-color: red;"> max length 9.</span>
+                    </div>
+                    <br/>
+                    <div class="formStructure">
+                         <label for="Password2">Confirm Password </label><div class="requiredAsterisk alignAsterisk">*</div> <br>
+                         <input id="Password2" maxlength="9" name="Password2" size="18" type="password"
+                                onkeyup="keyUpPassword('Password2','Password2Length','Password2MaxLength');" value="" class="logInFormInput">
+                        <span id="Password2Length" style="font-size: 13px;">0</span><span style="font-size: 13px;"> characters entered, </span>
+                        <span id="Password2MaxLength" style="font-size: 13px; text-decoration-color: red;"> max length 9.</span>
+                         <br>
+                        <input type="checkbox" onclick="togglePassword()" style="margin-top: 10px;">
+                        <span style="font-style: italic; font-size: 13px;"> Show Password</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logInContentSection">
+            <div class="content">
+                <h2>Personal Information</h2>
+                <hr/>
+                <div>
+                    <div class="formStructure">
+                        <label for="FirstName">First Name </label>
+                        <div class="requiredAsterisk alignAsterisk">*</div>
+                        <br>
+                        <input id="FirstName" maxlength="15" name="FirstName" size="20" type="text"
+                               value=""
+                               class="logInFormInput">
+                    </div>
+
+                    <div class="formStructure">
+                        <label for="MI">MI</label>
+                        <div class="requiredAsterisk alignAsterisk" style="color:#FFFFFF;">:</div>
+                        <br/>
+                        <input id="MI" maxlength="1" name="MI" size="2" type="text" value=""
+                               class="logInFormInput" style="width:40px;" aria-label="Middle Initial">
+                    </div>
+                    <div class="formStructure">
+                        <label for="LastName">Last Name </label>
+                        <div class="requiredAsterisk alignAsterisk">*</div>
+                        <br>
+                        <input id="LastName" maxlength="20" name="LastName" size="20" type="text"
+                               value="" class="logInFormInput">
+                    </div>
+                    <br/>
+                    <label for="Address1">Street Address 1 </label>
+                    <div class="requiredAsterisk alignAsterisk">*</div>
+                    <br>
+                    <input id="Address1" style="width:446px;" maxlength="30" name="Address1" size="30"
+                           type="text" value="" class="logInFormInput">
+                    <br/>
+                    <label for="Address2">Street Address 2 </label>
+                    <br>
+                    <input id="Address2" style="width:446px;" maxlength="30" name="Address2" size="30" type="text"
+                           value="" title="Street Address - Line 2" class="logInFormInput">
+                    <br/>
+                    <div class="formStructure">
+                        <label for="City">City </label>
+                        <div class="requiredAsterisk alignAsterisk">*</div>
+                        <br>
+                        <input style="width:446px;" id="City" maxlength="25" name="City" size="30" type="text"
+                               value=""
+                               class="logInFormInput">
+                    </div>
+                    <br/>
+                    <div class="formStructure">
+                        <label for="Country">Country </label>
+                        <div class="requiredAsterisk alignAsterisk">*</div>
+                        <br>
+                        <select id="Country" name="Country" class="logInFormInput"
+                                style="width:188px;" onchange="countryChecked();return false;">
+                            <option selected="" value="">---- select ----</option>
+                            <option value="Canada">Canada</option>
+                            <option value="United States">United States</option>
+                        </select>
+                    </div>
+                    <div class="formStructure">
+                        <label for="State">State/Province </label>
+                        <div class="requiredAsterisk alignAsterisk">*</div>
+                        <br>
+                        <select id="State" name="State" class="logInFormInput"
+                                style="width:243px;" onclick="stateClicked();return false;">
+                            <option selected="">---- select ----</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="formStructure">
+                        <label for="ZipCode">Zip/Postal Code </label>
+                        <div class="requiredAsterisk alignAsterisk">*</div>
+                        <br>
+                        <input id="ZipCode" style="width:187px;" maxlength="10" name="ZipCode" size="10"
+                               type="text"
+                               value="" class="logInFormInput" onclick="zipClicked();return false;">
+                    </div>
+                    <br>
+                    <div class="formStructure">
+                        <label for="ContactPhone">Contact Phone </label>
+                        <div class="requiredAsterisk alignAsterisk">*</div>
+                        <br>
+                        <input id="ContactPhone" style="width:187px;" maxlength="10" name="contactPhone"
+                               size="10"
+                               type="text" value=""
+                               class="logInFormInput">
+                    </div>
+                    <br>
+                    <label for="EmailAddress">Email Address </label>
+                    <div class="requiredAsterisk alignAsterisk">*</div>
+                    <br>
+                    <input style="width:446px;" id="EmailAddress" maxlength="79" name="EmailAddress"
+                           size="30" type="text" value="" class="logInFormInput">
+                </div>
+                <div>
+                    <br>
+                    <span class="terms">By clicking the Submit button you agree to the <span
+                            style="font-weight: bold;">Ident.com</span> <a href="javascript:web_consent()">terms and conditions</a>.</span>
+                </div>
+                <div style="padding-top:5px;">
+                    <br>
+                    <input type="button" value="Submit" onclick="return submit_click()" class="blueBtn"
+                           style="float:left;">
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://www.ident.ws/js/hiContrast.js"></script>
+</body>
+</html>
+
+

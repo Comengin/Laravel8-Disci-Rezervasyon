@@ -23,6 +23,13 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 
 <body>
 @include('home._header')
+<!-- Navigation-->
+<div id="navigation">
+    @include('home._banner')
+    @include('home._schedule')
+</div>
+
+
 @include('home._footer')
 </body>
 </html>

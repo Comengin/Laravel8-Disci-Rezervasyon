@@ -1,4 +1,3 @@
-<!-- //header -->
 <div class="main" id="home">
 
 <!-- banner -->
@@ -45,4 +44,4 @@
 	</div>
 	</div>
 <!-- //banner -->
-	</div>
+</div>
