@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="index changing">
-      <change afterPath="$PROJECT_DIR$/TEMPS/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/signup.html" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="index.html &#10;home.blade.php&#10;_banner.blade.php&#10;changing&#10;login.html&#10;signup.html&#10;adding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TEMPS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_banner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_banner.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +199,7 @@
       <workItem from="1608141699781" duration="599000" />
       <workItem from="1608315718024" duration="902000" />
       <workItem from="1608379934782" duration="4465000" />
-      <workItem from="1608414535525" duration="5377000" />
+      <workItem from="1608414535525" duration="6286000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -245,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608425230030</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="index.html &#10;home.blade.php&#10;_banner.blade.php&#10;changing&#10;login.html&#10;signup.html&#10;adding">
+      <created>1608428748884</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608428748884</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +274,8 @@
     <MESSAGE value="controller changing" />
     <MESSAGE value="controller changing2" />
     <MESSAGE value="index changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="index changing" />
+    <MESSAGE value="index.html &#10;home.blade.php&#10;_banner.blade.php&#10;changing&#10;login.html&#10;signup.html&#10;adding" />
+    <option name="LAST_COMMIT_MESSAGE" value="index.html &#10;home.blade.php&#10;_banner.blade.php&#10;changing&#10;login.html&#10;signup.html&#10;adding" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607309550918">
@@ -308,10 +314,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607316680723" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1608425233516">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1608428753271">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608425233516" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608428753271" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608414752628">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

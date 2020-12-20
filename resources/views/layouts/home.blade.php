@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Dental Pro</title>
+    <title>@yield('title')</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Dental Pro Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <meta name="keywords" content="@yield('keywords')" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
         function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //for-mobile-apps -->
@@ -23,13 +22,6 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 
 <body>
 @include('home._header')
-<!-- Navigation-->
-<div id="navigation">
-    @include('home._banner')
-    @include('home._schedule')
-</div>
-
-
 @include('home._footer')
 </body>
 </html>
