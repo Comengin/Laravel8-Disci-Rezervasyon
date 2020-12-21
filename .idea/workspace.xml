@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="index.html &#10;home.blade.php&#10;index.blade.php&#10;changing">
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="_footer.blade.php&#10;home.blade.php&#10;index.blade.php&#10;changing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_schedule.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +204,8 @@
       <workItem from="1608315718024" duration="902000" />
       <workItem from="1608379934782" duration="4465000" />
       <workItem from="1608414535525" duration="6751000" />
-      <workItem from="1608488021172" duration="4994000" />
+      <workItem from="1608488021172" duration="5824000" />
+      <workItem from="1608553695486" duration="636000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -264,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608429788842</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="_footer.blade.php&#10;home.blade.php&#10;index.blade.php&#10;changing">
+      <created>1608503421683</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608503421683</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +296,8 @@
     <MESSAGE value="index changing" />
     <MESSAGE value="index.html &#10;home.blade.php&#10;_banner.blade.php&#10;changing&#10;login.html&#10;signup.html&#10;adding" />
     <MESSAGE value="index.html &#10;home.blade.php&#10;index.blade.php&#10;changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="index.html &#10;home.blade.php&#10;index.blade.php&#10;changing" />
+    <MESSAGE value="_footer.blade.php&#10;home.blade.php&#10;index.blade.php&#10;changing" />
+    <option name="LAST_COMMIT_MESSAGE" value="_footer.blade.php&#10;home.blade.php&#10;index.blade.php&#10;changing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607309550918">
@@ -329,10 +336,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607316680723" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1608429791330">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1608503511620">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608429791330" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608503511620" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608414752628">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
