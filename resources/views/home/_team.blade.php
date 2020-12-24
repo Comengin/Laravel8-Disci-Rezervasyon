@@ -6,7 +6,7 @@
         <div class="w3l_team_grids">
             <div class="col-md-3 w3l_team_grid">
                 <div class="view view-second">
-                    <img src="images/t3.jpg" alt=" " class="img-responsive">
+                    <img src="{{asset('assets')}}/images/t3.jpg" alt=" " class="img-responsive">
                     <div class="mask"></div>
                     <div class="content">
                         <div class="w3l_social_icons w3l_social_icons1">
@@ -24,7 +24,7 @@
             </div>
             <div class="col-md-3 w3l_team_grid">
                 <div class="view view-second">
-                    <img src="images/t4.jpg" alt=" " class="img-responsive">
+                    <img src="{{asset('assets')}}/images/t4.jpg" alt=" " class="img-responsive">
                     <div class="mask"></div>
                     <div class="content">
                         <div class="w3l_social_icons w3l_social_icons1">
@@ -42,7 +42,7 @@
             </div>
             <div class="col-md-3 w3l_team_grid">
                 <div class="view view-second">
-                    <img src="images/t1.jpg" alt=" " class="img-responsive">
+                    <img src="{{asset('assets')}}/images/t1.jpg" alt=" " class="img-responsive">
                     <div class="mask"></div>
                     <div class="content">
                         <div class="w3l_social_icons w3l_social_icons1">
@@ -60,7 +60,7 @@
             </div>
             <div class="col-md-3 w3l_team_grid">
                 <div class="view view-second">
-                    <img src="images/t2.jpg" alt=" " class="img-responsive">
+                    <img src="{{asset('assets')}}/images/t2.jpg" alt=" " class="img-responsive">
                     <div class="mask"></div>
                     <div class="content">
                         <div class="w3l_social_icons w3l_social_icons1">
@@ -76,8 +76,6 @@
                 <h4>James Walter</h4>
                 <p>Dentist</p>
             </div>
-
-
             <div class="clearfix"> </div>
         </div>
     </div>

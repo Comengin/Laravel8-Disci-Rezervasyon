@@ -1,3 +1,27 @@
+<!-- /services -->
+<!-- /property-grids -->
+<div class="property-grids">
+    <div class="agile-homes-w3l  grid">
+        <div class="col-md-6 home-agile-left">
+            <div class="video-grid-single-page-agileits">
+                <div data-video="qvRoq9ToKhw" id="video"> <img src="{{asset('assets')}}/images/a11.jpg" alt="" class="img-responsive" /> </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-6 home-agile-left">
+            <figure class="effect-moses">
+                <img src="{{asset('assets')}}/images/a2.jpg" alt="" />
+                <figcaption>
+                    <h4>Dental Pro</h4>
+                    <p>Helping You Stay Happy One</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- //property-grids -->
 <!-- choose-us -->
 <div class="why-choose-agile">
     <div class="container">
@@ -43,7 +67,7 @@
                 </div>
             </div>
             <div class="col-md-4 agileits-w3layouts-grid img">
-                <img src="images/why.jpg" alt=" " class="img-responsive" />
+                <img src="{{asset('assets')}}/images/why.jpg" alt=" " class="img-responsive" />
             </div>
             <div class="col-md-4 agileits-w3layouts-grid">
                 <div class="wthree_agile_us">

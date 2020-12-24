@@ -24,8 +24,8 @@
 <body>
 @include('home._header')
 
-@section('content')
-@show
+@include('home._services')
+
 @include('home._footer')
 
 </body>

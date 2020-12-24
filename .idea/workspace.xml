@@ -19,10 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="_footer.blade.php&#10;home.blade.php&#10;index.blade.php&#10;changing">
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="_schedule.blade.php&#10;deleting">
+      <change afterPath="$PROJECT_DIR$/TEMPS/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/services.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_schedule.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_banner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_chooseus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_news.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_propertygrids.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_team.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_team.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_work.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_work.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/test.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +189,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\codes\php\laravelj\resources\views\layouts" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\codes\php\laravelj\public\assets\css" />
     </key>
@@ -205,7 +223,9 @@
       <workItem from="1608379934782" duration="4465000" />
       <workItem from="1608414535525" duration="6751000" />
       <workItem from="1608488021172" duration="5824000" />
-      <workItem from="1608553695486" duration="636000" />
+      <workItem from="1608553695486" duration="1884000" />
+      <workItem from="1608570151081" duration="598000" />
+      <workItem from="1608748199749" duration="8015000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -270,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608503421683</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="_schedule.blade.php&#10;deleting">
+      <created>1608557810926</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1608557810926</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +324,8 @@
     <MESSAGE value="index.html &#10;home.blade.php&#10;_banner.blade.php&#10;changing&#10;login.html&#10;signup.html&#10;adding" />
     <MESSAGE value="index.html &#10;home.blade.php&#10;index.blade.php&#10;changing" />
     <MESSAGE value="_footer.blade.php&#10;home.blade.php&#10;index.blade.php&#10;changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="_footer.blade.php&#10;home.blade.php&#10;index.blade.php&#10;changing" />
+    <MESSAGE value="_schedule.blade.php&#10;deleting" />
+    <option name="LAST_COMMIT_MESSAGE" value="_schedule.blade.php&#10;deleting" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607309550918">
@@ -328,18 +356,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="922" y="108" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1607311587229" />
-    <state x="746" y="141" key="NewPhpFileDialog" timestamp="1607904543901">
+    <state x="746" y="141" key="NewPhpFileDialog" timestamp="1608750244716">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="746" y="141" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1607904543901" />
+    <state x="746" y="141" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1608750244716" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1607316680723">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607316680723" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1608503511620">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1608557815115">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608503511620" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608557815115" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608414752628">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -7,7 +7,7 @@
     Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design
 @endsection
 @section('content')
-    @include('home._banner')
+    @include('home._home')
     <!-- /schedule-grids -->
     <div class="top-agile-wthree-grids">
         <div class="col-md-4 schedule-agile ">

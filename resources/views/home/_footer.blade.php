@@ -19,10 +19,10 @@
             <div class="col-md-4 w3agile_footer_grid w3agile_footer_grid1">
                 <h3>Navigation</h3>
                 <ul>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="#about">About</a></li>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="#gallery">Gallery</a></li>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="#team">Dentists</a></li>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="#contact">contact</a></li>
+                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="about">About</a></li>
+                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="gallery">Gallery</a></li>
+                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="team">Dentists</a></li>
+                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="contact">contact</a></li>
                 </ul>
             </div>
             <div class="clearfix"> </div>

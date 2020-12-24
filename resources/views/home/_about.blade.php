@@ -1,8 +1,7 @@
 <!-- about -->
 	<div class="about" id="about">
 		<div class="container">
-					<h3 class="w3l_head">Step by step
-Procedure</h3>
+					<h3 class="w3l_head">Step by step Procedure</h3>
 			          <p class="w3ls_head_para">A few words about us</p>
 						<div class="w3l-grids-about">
 								<div class="col-md-5 w3ls-ab-right">
@@ -36,7 +35,7 @@ Procedure</h3>
 															<div class="modal-content">
 																<div class="modal-header">
 																	<button type="button" class="close" data-dismiss="modal">&times;</button>
-																	<img src="images/g1.jpg" alt=" " class="img-responsive">
+																	<img src="{{asset('assets')}}/images/g1.jpg" alt=" " class="img-responsive">
 																	<h5>Donec lobortis pharetra dolor</h5>
 																	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, rds which don't look even slightly believable..</p>
 																</div>
