@@ -29,13 +29,18 @@ Route::get('/services', function () {
 Route::get('/about', function () {
     return view('layouts.about');
 });
-/*
-//Route::get('/home', [HomeController::class, 'index'])->name('home');
-//Route::get('/test/{id}', [HomeController::class, 'test'])->where('id', '[0-9]+');
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+/*//Route::get('/test/{id}', [HomeController::class, 'test'])->where('id', '[0-9]+');
 //string icin
 //Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
 Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('id')->whereAlpha('name')->name('test');
+*/
+
+//Admin
+Route::get('/admin',[\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('adminhome');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
-})->name('dashboard');*/
+})->name('dashboard');
