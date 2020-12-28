@@ -9,7 +9,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        echo "Admin Ana Sayfa";
-        exit();
+        return view('admin.index');
     }
 }

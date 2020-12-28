@@ -31,7 +31,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/about', [HomeController::class, 'about'])->name('about');
+//Route::get('/about', [HomeController::class, 'about'])->name('about');
 /*//Route::get('/test/{id}', [HomeController::class, 'test'])->where('id', '[0-9]+');
 //string icin
 //Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
