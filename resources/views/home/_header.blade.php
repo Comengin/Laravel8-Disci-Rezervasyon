@@ -20,7 +20,7 @@
                 <nav class="link-effect-5" id="link-effect-5">
                     <ul class="nav navbar-nav">
                         <li class="active"><a class="scroll hvr-underline-from-center" href="index.html">Home</a></li>
-                        <li><a href="about" class="scroll hvr-underline-from-center">About</a></li>
+                        <li><a href="{{route('about_home')}}" class="scroll hvr-underline-from-center">About</a></li>
                         <li><a href="services" class="scroll hvr-underline-from-center">Services</a></li>
                         <li><a href="#team" class="scroll hvr-underline-from-center">Dentists</a></li>
                         <li><a href="#gallery" class="scroll hvr-underline-from-center">Gallery</a></li>
