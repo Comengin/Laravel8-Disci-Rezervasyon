@@ -48,7 +48,7 @@
                         <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Remember Me</span>
                     </label>
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                <input value="Sign in" type="submit" class="btn btn-primary btn-lg btn-block">
             </form>
         </div>
         <div class="card-footer bg-white p-0  ">
