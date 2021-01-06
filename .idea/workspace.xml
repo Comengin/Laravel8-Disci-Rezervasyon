@@ -19,20 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="edit category:&#10;category.blade.php&#10;category_edit.blade.php&#10;CategoryController.php">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_112909_create_products_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_122922_product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Product part:&#10;product.blade.php&#10;product_add.blade.php&#10;product_edit.blade.php&#10;ProductController.php&#10;Product.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +239,8 @@
       <workItem from="1609674425236" duration="10609000" />
       <workItem from="1609704643905" duration="1198000" />
       <workItem from="1609782881688" duration="10059000" />
-      <workItem from="1609846109486" duration="19895000" />
+      <workItem from="1609846109486" duration="20172000" />
+      <workItem from="1609936141528" duration="15666000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -388,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609800247120</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Product part:&#10;product.blade.php&#10;product_add.blade.php&#10;product_edit.blade.php&#10;ProductController.php&#10;Product.php">
+      <created>1609896613646</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1609896613647</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,6 +425,7 @@
     <MESSAGE value="category database adding" />
     <MESSAGE value="category adding process and deleting" />
     <MESSAGE value="edit category:&#10;category.blade.php&#10;category_edit.blade.php&#10;CategoryController.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit category:&#10;category.blade.php&#10;category_edit.blade.php&#10;CategoryController.php" />
+    <MESSAGE value="Product part:&#10;product.blade.php&#10;product_add.blade.php&#10;product_edit.blade.php&#10;ProductController.php&#10;Product.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product part:&#10;product.blade.php&#10;product_add.blade.php&#10;product_edit.blade.php&#10;ProductController.php&#10;Product.php" />
   </component>
 </project>
