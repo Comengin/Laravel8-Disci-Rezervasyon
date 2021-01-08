@@ -65,11 +65,20 @@ Route::/*middleware('aut')->*/prefix('admin')->group(function (){
         Route::get('show',[\App\Http\Controllers\Admin\ProductController::class, 'show'])->name('admin_product_show');
 
     });
+    #Product image gallery
+    Route::prefix('image')->group(function () {
+        Route::get('create/{product_id}', [\App\Http\Controllers\Admin\ImageController::class , 'create'])->name('admin_image_add');
+        Route::post('store/{product_id}', [\App\Http\Controllers\Admin\ImageController::class , 'store'])->name('admin_image_store');
+        Route::get('delete/{id}/{product_id}', [\App\Http\Controllers\Admin\ImageController::class , 'destroy'])->name('admin_image_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\ImageController::class , 'show'])->name('admin_image_show');
+    });
+
+
 });
 Route::get('/admin/login',[HomeController::class, 'login'])->name('admin_login');
-Route::post('/admin/logincheck',[App\Http\Controllers\Admin\HomeController::class, 'logincheck'])->name('admin_logincheck');
+Route::post('/admin/logincheck',[HomeController::class, 'logincheck'])->name('admin_logincheck');
 Route::get('/admin/logout',[HomeController::class, 'logout'])->name('admin_logout');
-/*Route::get('/admin',[App\Http\Controllers\Admin\HomeController::class,'index'])->name('adminhome')->middleware('auth')*/;
+/*Route::get('/admin',[App\Http\Controllers\Admin\HomeController::class,'index'])->name('adminhome')->middleware('auth');*/
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
