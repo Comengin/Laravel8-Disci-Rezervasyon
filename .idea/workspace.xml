@@ -19,16 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="diş tedavi fotoğrafların yüklenmesi">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Setting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_180813_create_settings_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_23_003903_setting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Setting Site Ayarlari:&#10;Setting.php&#10;setting_edit.blade.php&#10;SettingController.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +254,9 @@
       <workItem from="1611326576683" duration="2343000" />
       <workItem from="1611338862885" duration="7515000" />
       <workItem from="1611401997259" duration="9179000" />
-      <workItem from="1612010808297" duration="3970000" />
+      <workItem from="1612010808297" duration="4199000" />
+      <workItem from="1612056324495" duration="609000" />
+      <workItem from="1612095521839" duration="3198000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -427,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611249973835</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Setting Site Ayarlari:&#10;Setting.php&#10;setting_edit.blade.php&#10;SettingController.php">
+      <created>1612055917955</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1612055917956</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,6 +473,7 @@
     <MESSAGE value="product detail rich text editor&#10;product image upload and display" />
     <MESSAGE value="product image gallery:&#10;product.blade.php&#10;image_add.blade.php&#10;ImageController.php" />
     <MESSAGE value="diş tedavi fotoğrafların yüklenmesi" />
-    <option name="LAST_COMMIT_MESSAGE" value="diş tedavi fotoğrafların yüklenmesi" />
+    <MESSAGE value="Setting Site Ayarlari:&#10;Setting.php&#10;setting_edit.blade.php&#10;SettingController.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setting Site Ayarlari:&#10;Setting.php&#10;setting_edit.blade.php&#10;SettingController.php" />
   </component>
 </project>

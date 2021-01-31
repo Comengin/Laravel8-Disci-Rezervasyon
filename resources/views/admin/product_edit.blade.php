@@ -55,7 +55,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="inputText3" class="col-form-label">Image</label>
-                                            <input id="inputText3" type="file" value="{{$data->image}}" name="image" class="form-control">
+                                            <input id="inputText3" type="file" name="image" class="form-control">
                                             @if ($rs->image)
                                                 <img src="{{Storage::url($rs->image)}}" height="60" alt="">
                                             @endif

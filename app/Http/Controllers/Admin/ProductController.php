@@ -98,7 +98,9 @@ class ProductController extends Controller
         $data->user_id=Auth::id();
         $data->detail=$request->input('detail');
         $data->price=$request->input('price');
-        $data->image=Storage::putFile('images',$request->file('image'));
+        if ($request->file('image')!=null){
+            $data->image=Storage::putFile('images',$request->file('image'));
+        }
         $data->save();
         return redirect()->route('admin_products');
     }
