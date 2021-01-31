@@ -19,30 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="product image gallery:&#10;product.blade.php&#10;image_add.blade.php&#10;ImageController.php">
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/Gülüş Tasarımı/Gulus-tasarimi-fiyatlari-2020.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/Gülüş Tasarımı/download.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/Gülüş Tasarımı/laminate-veneer-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/Gülüş Tasarımı/timthumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş beyazlatma/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş beyazlatma/dis-beyazlatma.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş beyazlatma/dislerde-renklesme.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş dolgusu/1112019142028.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş dolgusu/Dis-Dolgusu-–-Kompozit-Dis-Dolgu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş dolgusu/dis-dolgusu-cesitleri.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş dolgusu/diş-dolgusu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş dolgusu/dolgu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/implant/9450945.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/implant/implant-detay-1024x768.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/hqdefault.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/ortodonti-disteli-1920x1080-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/ortodonti-oncesi-sonrasi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/ortodonti-tedavisi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/ortodontik-dis-teli-tedavisi-kayseri-dis-hastanesi-maya-dis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/ortognatik-ortodonti-tedavisi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/q.png" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="diş tedavi fotoğrafların yüklenmesi">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Setting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_180813_create_settings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_23_003903_setting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,17 +180,18 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\codes\php\laravelj\routes" />
       <recent name="C:\codes\php\laravelj\resources\views\admin" />
+      <recent name="C:\codes\php\laravelj\routes" />
       <recent name="C:\codes\php\laravelj\public\assets\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -266,7 +253,11 @@
       <workItem from="1610441239414" duration="8000" />
       <workItem from="1610667691133" duration="8000" />
       <workItem from="1610825813988" duration="8000" />
-      <workItem from="1611245159216" duration="1199000" />
+      <workItem from="1611245159216" duration="2067000" />
+      <workItem from="1611326576683" duration="2343000" />
+      <workItem from="1611338862885" duration="7515000" />
+      <workItem from="1611401997259" duration="9179000" />
+      <workItem from="1612010808297" duration="3970000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -429,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610145824582</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="diş tedavi fotoğrafların yüklenmesi">
+      <created>1611249973834</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1611249973835</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,6 +466,7 @@
     <MESSAGE value="Product part:&#10;product.blade.php&#10;product_add.blade.php&#10;product_edit.blade.php&#10;ProductController.php&#10;Product.php" />
     <MESSAGE value="product detail rich text editor&#10;product image upload and display" />
     <MESSAGE value="product image gallery:&#10;product.blade.php&#10;image_add.blade.php&#10;ImageController.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="product image gallery:&#10;product.blade.php&#10;image_add.blade.php&#10;ImageController.php" />
+    <MESSAGE value="diş tedavi fotoğrafların yüklenmesi" />
+    <option name="LAST_COMMIT_MESSAGE" value="diş tedavi fotoğrafların yüklenmesi" />
   </component>
 </project>

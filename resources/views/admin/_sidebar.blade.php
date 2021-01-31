@@ -17,6 +17,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="{{route('admin_products')}}" ><i class="fa fa-fw fa-rocket"></i>Products</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{route('admin_setting')}}">Settings</a>
+                    </li>
                 </ul>
             </div>
         </nav>
