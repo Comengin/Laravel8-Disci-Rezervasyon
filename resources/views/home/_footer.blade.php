@@ -1,3 +1,6 @@
+@php
+    $setting = \App\Http\Controllers\HomeController::getsetting()
+@endphp
 <!-- footer -->
 <div class="footer-bottom">
     <div class="container">
@@ -9,12 +12,11 @@
             </div>
 
             <div class="col-md-4 w3agile_footer_grid">
-                <h3>Contact Info</h3>
-                <ul>
-                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="contactto:info@example.com">info@example.com</a></li>
-                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
-                </ul>
+                {{$setting->company}}<br>
+                {{$setting->address}}<br>
+                <strong>Phone :</strong>{{$setting->phone}}<br>
+                <strong>fax :</strong>{{$setting->fax}}<br>
+                <strong>Email :</strong>{{$setting->email}}<br>
             </div>
             <div class="col-md-4 w3agile_footer_grid w3agile_footer_grid1">
                 <h3>Navigation</h3>
@@ -22,7 +24,7 @@
                     <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="about">About</a></li>
                     <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="gallery">Gallery</a></li>
                     <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="team">Dentists</a></li>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="contact">contact</a></li>
+                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="contact">Contact</a></li>
                 </ul>
             </div>
             <div class="clearfix"> </div>
@@ -32,12 +34,14 @@
 <div class="copy-right-social">
     <div class="container">
         <div class="copy-right">
-            <p>&copy; 2017 Dental Pro. All rights reserved</p>
+            <p>&copy; 2020 Dental Pro. All rights reserved | {{$setting->company}}</p>
         </div>
         <div class="bottom-socila-icons">
             <ul class="top-links two">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                @if ($setting->facebook != null)<li><a href="{{$setting->facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>@endif
+                @if ($setting->twitter != null)<li><a href="{{$setting->twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>@endif
+                @if ($setting->instagram != null)<li><a href="{{$setting->instagram}}" target="_blank"><i class="fa fa-instagram"></i></a></li>@endif
+                @if ($setting->youtube != null)<li><a href="{{$setting->youtube}}" target="_blank"><i class="fa fa-youtube"></i></a></li>@endif
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
             </ul>

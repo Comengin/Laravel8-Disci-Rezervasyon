@@ -19,17 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Relation Category Product One to Many İlişkisi">
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Category Tree Sub Category Gösterimi">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,13 +182,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\codes\php\laravelj\resources\views\home" />
       <recent name="C:\codes\php\laravelj\resources\views\admin" />
       <recent name="C:\codes\php\laravelj\routes" />
       <recent name="C:\codes\php\laravelj\public\assets\css" />
@@ -260,7 +259,9 @@
       <workItem from="1611401997259" duration="9179000" />
       <workItem from="1612010808297" duration="4199000" />
       <workItem from="1612056324495" duration="609000" />
-      <workItem from="1612095521839" duration="9306000" />
+      <workItem from="1612095521839" duration="11099000" />
+      <workItem from="1612176639193" duration="23849000" />
+      <workItem from="1612347922112" duration="10683000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -444,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612106333270</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Category Tree Sub Category Gösterimi">
+      <created>1612134890325</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1612134890325</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,6 +494,7 @@
     <MESSAGE value="diş tedavi fotoğrafların yüklenmesi" />
     <MESSAGE value="Setting Site Ayarlari:&#10;Setting.php&#10;setting_edit.blade.php&#10;SettingController.php" />
     <MESSAGE value="Relation Category Product One to Many İlişkisi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Relation Category Product One to Many İlişkisi" />
+    <MESSAGE value="Category Tree Sub Category Gösterimi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Category Tree Sub Category Gösterimi" />
   </component>
 </project>

@@ -1,11 +1,17 @@
 @extends('layouts.home')
 
-@section('title', 'Dental Pro')
+@php
+    $setting=\App\Http\Controllers\HomeController::getSetting()
+@endphp
 
-@section('keywords')
-    Dental Pro Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-    Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design
+@section('title', $setting->title)
+
+@section('description')
+    {{$setting->description}}
 @endsection
+
+@section('keywords', $setting->keywords)
+
 @section('content')
     @include('home._home')
     <!-- /schedule-grids -->

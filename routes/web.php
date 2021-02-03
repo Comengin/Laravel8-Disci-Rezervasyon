@@ -21,23 +21,30 @@ Route::get('/home2', function () {
     return view('welcome');
 });
 //controllere ihtiyac yoksa
-Route::get('/', function () {
-    return view('home.index');
-});
 
 Route::get('/services', function () {
     return view('layouts.services');
 });
+
+
 /*
 Route::get('/about', function () {
     return view('layouts.about');
 });*/
+Route::get('/',[HomeController::class,'index'])->name('home');
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/about', [\App\Http\Controllers\HomeController::class, 'about'])->name('about_home');
-/*//Route::get('/test/{id}', [HomeController::class, 'test'])->where('id', '[0-9]+');
-//string icin
-//Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
+Route::get('/home',[HomeController::class,'index'])->name('homepage');
+Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
+Route::get('/services',[HomeController::class,'services'])->name('services');
+Route::get('/dentists',[HomeController::class,'dentists'])->name('dentists');
+Route::get('/gallery',[HomeController::class,'gallery'])->name('gallery');
+Route::post('/faq',[HomeController::class,'faq'])->name('faq');
+Route::get('/categories',[HomeController::class,'categories'])->name('categories');
+
+/*
+Route::get('/test/{id}', [HomeController::class, 'test'])->where('id', '[0-9]+');
+string icin
+Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
 Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('id')->whereAlpha('name')->name('test');
 */
 
@@ -78,9 +85,14 @@ Route::/*middleware('aut')->*/prefix('admin')->group(function (){
 
 
 });
+
+Route::middleware('auth')->prefix('user')->namespace('user')->group(function () {
+    Route::get('/',[UserController::class,'index'])->name('profile');
+});
+
 Route::get('/admin/login',[HomeController::class, 'login'])->name('admin_login');
 Route::post('/admin/logincheck',[HomeController::class, 'logincheck'])->name('admin_logincheck');
-Route::get('/admin/logout',[HomeController::class, 'logout'])->name('admin_logout');
+Route::get('/logout',[HomeController::class, 'logout'])->name('logout');
 /*Route::get('/admin',[App\Http\Controllers\Admin\HomeController::class,'index'])->name('adminhome')->middleware('auth');*/
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
