@@ -36,8 +36,8 @@ Route::get('/',[HomeController::class,'index'])->name('home');
 
 Route::get('/home',[HomeController::class,'index'])->name('homepage');
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
-Route::get('/services',[HomeController::class,'services'])->name('services');
-Route::get('/dentists',[HomeController::class,'dentists'])->name('dentists');
+Route::get('/references',[HomeController::class,'references'])->name('references');
+Route::get('/contact',[HomeController::class,'contact'])->name('contact');
 Route::get('/gallery',[HomeController::class,'gallery'])->name('gallery');
 Route::post('/faq',[HomeController::class,'faq'])->name('faq');
 Route::get('/categories',[HomeController::class,'categories'])->name('categories');

@@ -19,14 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="User Profile Page oluşturma Jetstream sayfasını panele alma">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_135656_user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_140945_add_address_to_users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="User Profile Photo Ek Alanlar Ekleme Guncelleme">
+      <change afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/references.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,15 +181,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\codes\php\laravelj\resources\views\layouts" />
       <recent name="C:\codes\php\laravelj\resources\views\home" />
+      <recent name="C:\codes\php\laravelj\resources\views\layouts" />
       <recent name="C:\codes\php\laravelj\resources\views\admin" />
       <recent name="C:\codes\php\laravelj\routes" />
       <recent name="C:\codes\php\laravelj\public\assets\css" />
@@ -263,7 +262,7 @@
       <workItem from="1612095521839" duration="11099000" />
       <workItem from="1612176639193" duration="23849000" />
       <workItem from="1612347922112" duration="23526000" />
-      <workItem from="1612426605563" duration="21682000" />
+      <workItem from="1612426605563" duration="24198000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -475,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612443917788</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="User Profile Photo Ek Alanlar Ekleme Guncelleme">
+      <created>1612454770039</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1612454770039</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +501,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="controller changing" />
     <MESSAGE value="controller changing2" />
     <MESSAGE value="index changing" />
     <MESSAGE value="index.html &#10;home.blade.php&#10;_banner.blade.php&#10;changing&#10;login.html&#10;signup.html&#10;adding" />
@@ -520,6 +525,7 @@
     <MESSAGE value="Home Page Setting Meta tags data User ve sayfa linkleri" />
     <MESSAGE value="Deleting all files named products and creating a tedavi file &#10;tedavi.blade.php&#10;Tedavi.php&#10;tedavi_add.blade.php&#10;tedavi_edit.blade.php&#10;TedaviController.php" />
     <MESSAGE value="User Profile Page oluşturma Jetstream sayfasını panele alma" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Profile Page oluşturma Jetstream sayfasını panele alma" />
+    <MESSAGE value="User Profile Photo Ek Alanlar Ekleme Guncelleme" />
+    <option name="LAST_COMMIT_MESSAGE" value="User Profile Photo Ek Alanlar Ekleme Guncelleme" />
   </component>
 </project>
