@@ -91,6 +91,10 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
     Route::get('/',[UserController::class,'index'])->name('myprofile');
 });
 
+Route::middleware('auth')->prefix('user')->namespace('user')->group(function () {
+    Route::get('/profile',[UserController::class,'index'])->name('userprofile');
+});
+
 Route::get('/admin/login',[HomeController::class, 'login'])->name('admin_login');
 Route::post('/admin/logincheck',[HomeController::class, 'logincheck'])->name('admin_logincheck');
 Route::get('/logout',[HomeController::class, 'logout'])->name('logout');
