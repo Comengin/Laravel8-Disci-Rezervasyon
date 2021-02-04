@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Image;
-use App\Models\Product;
+use App\Models\Tedavi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
@@ -26,12 +26,12 @@ class ImageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create($product_id)
+    public function create($tedavi_id)
     {
 
-        $data=Product::find($product_id);//id yi product id ye gönderdik.
-        //$images=Image::whereColumn('product_id',$product_id);
-        $images = DB::table('images')->where('product_id','=',$product_id)->get();
+        $data=Tedavi::find($tedavi_id);//id yi tedavi id ye gönderdik.
+        //$images=Image::whereColumn('tedavi_id',$tedavi_id);
+        $images = DB::table('images')->where('tedavi_id','=',$tedavi_id)->get();
         return view('admin.image_add',['data'=>$data,'images'=>$images]);
     }
 
@@ -41,14 +41,14 @@ class ImageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $product_id)
+    public function store(Request $request, $tedavi_id)
     {
         $data= new Image();
         $data->title = $request->input('title');
-        $data->product_id=$product_id;
+        $data->tedavi_id=$tedavi_id;
         $data->image=Storage::putFile("images",$request->file('image'));//file upload
         $data->save();
-        return redirect()->route('admin_image_add',['product_id'=>$product_id]);
+        return redirect()->route('admin_image_add',['tedavi_id'=>$tedavi_id]);
 
     }
 
@@ -92,10 +92,10 @@ class ImageController extends Controller
      * @param  \App\Models\Image  $image
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Image $image,$id,$product_id)
+    public function destroy(Image $image,$id,$tedavi_id)
     {
         $data =Image::find($id);
         $data->delete();
-        return redirect()->route('admin_image_add',['product_id'=>$product_id]);
+        return redirect()->route('admin_image_add',['tedavi_id'=>$tedavi_id]);
     }
 }

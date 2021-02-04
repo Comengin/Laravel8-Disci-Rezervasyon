@@ -9,14 +9,14 @@
         <div class="container-fluid dashboard-content">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <h3 class="text-center">Product: {{$data->title}}</h3>
+                    <h3 class="text-center">Tedavi: {{$data->title}}</h3>
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="section-block" id="basicform">Add Image</div>
                             <div class="card">
                                 <div class="card-body">
 
-                                    <form action="{{route('admin_image_store',['product_id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                                    <form action="{{route('admin_image_store',['tedavi_id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-group">
                                             <label for="inputText3" class="col-form-label">Title</label>
@@ -50,7 +50,7 @@
                                                     @endif
 
                                                 </td>
-                                                <td><a href="{{route('admin_image_delete',['id' => $rs->id, 'product_id'=>$data->id])}}" onclick="return confirm('Delete! Are you sure?')">
+                                                <td><a href="{{route('admin_image_delete',['id' => $rs->id, 'tedavi_id'=>$data->id])}}" onclick="return confirm('Delete! Are you sure?')">
                                                         <img src="{{asset('assets/admin/images')}}/trash.png" height="25"></a></td>
                                             </tr>
                                         @endforeach

@@ -5,11 +5,7 @@
 @endphp
 
 @section('title', $setting->title)
-
-@section('description')
-    {{$setting->description}}
-@endsection
-
+@section('description'){{$setting->description}}@endsection
 @section('keywords', $setting->keywords)
 
 @section('content')

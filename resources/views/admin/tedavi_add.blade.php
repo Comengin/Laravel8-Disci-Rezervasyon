@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Edit Product')
+@section('title', 'Add Tedavi')
 @section('javascript')
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -14,64 +14,58 @@
         <div class="container-fluid dashboard-content">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <h3 class="text-center">Editing Product</h3>
+                    <h3 class="text-center">Adding Tedavi</h3>
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="section-block" id="basicform">Edit product</div>
+                            <div class="section-block" id="basicform">Add tedavi</div>
                             <div class="card">
                                 <div class="card-body">
-                                    <form action="{{route('admin_product_update',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                                    <form action="{{route('admin_tedavi_store')}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-group">
                                             <label for="inputText3" class="col-form-label">Category</label>
                                             <select class="form-control" name="category_id">
                                                 @foreach($datalist as $rs)
-                                                    <option
-                                                        value="{{$rs->id}}" @if($rs->id == $data->parent_id) selected="selected" @endif> {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs, $rs->title)}}
-                                                    </option>
+                                                    <option value="{{$rs->id}}">{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs, $rs->title)}}</option>
                                                 @endforeach
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="inputText3" class="col-form-label">Title</label>
-                                            <input id="inputText3" type="text" value="{{$data->title}}" class="form-control" name="title">
+                                            <input id="inputText3" type="text" class="form-control" name="title">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputText3" class="col-form-label">Keywords</label>
-                                            <input id="inputText3" type="text" value="{{$data->keywords}}" class="form-control" name="keywords">
+                                            <input id="inputText3" type="text" class="form-control" name="keywords">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputText3" class="col-form-label">Description</label>
-                                            <input id="inputText3" type="text" value="{{$data->description}}" class="form-control" name="description">
+                                            <input id="inputText3" type="text" class="form-control" name="description">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputText3" class="col-form-label">Detail</label>
-                                            <textarea id="summernote" name="detail">{{$data->detail}}</textarea>
+                                            <textarea id="summernote" name="detail"></textarea>
                                             <script>
-                                                $('#summernote').summernote({tabsize: 2, height: 100});
+                                                $('#summernote').summernote({ tabsize: 2, height: 100});
                                             </script>
                                         </div>
                                         <div class="form-group">
                                             <label for="inputText3" class="col-form-label">Price</label>
-                                            <input id="inputText3" value="{{$data->price}}" type="number" class="form-control" name="price">
+                                            <input id="inputText3" value="0" type="number" class="form-control" name="price">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputText3" class="col-form-label">Image</label>
                                             <input id="inputText3" type="file" name="image" class="form-control">
-                                            @if ($rs->image)
-                                                <img src="{{Storage::url($rs->image)}}" height="60" alt="">
-                                            @endif
                                         </div>
                                         <div class="form-group">
                                             <label>Status</label>
                                             <select class="form-control" name="status">
-                                                <option selected="selected">{{$data->status}}</option>
+                                                <option selected="selected">False</option>
                                                 <option>True</option>
-                                                <option>False</option>
                                             </select>
                                         </div>
                                         <div>
-                                            <button class="btn btn-primary" type="submit">Update Product</button>
+                                            <button class="btn btn-primary" type="submit">Add Tedavi</button>
                                         </div>
                                     </form>
                                 </div>

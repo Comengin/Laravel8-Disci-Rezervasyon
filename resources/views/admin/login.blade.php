@@ -38,17 +38,17 @@
             <form action="{{route('admin_logincheck')}}" method="post">
                 @csrf
                 <div class="form-group">
-                    <input class="form-control form-control-lg" id="username" name="email " type="email" placeholder="Username or email" autocomplete="off">
+                    <input class="form-control form-control-lg" id="email" name="email" type="email" placeholder="Username or email" autocomplete="off">
                 </div>
                 <div class="form-group">
-                    <input class="form-control form-control-lg" id="password" name="email " type="password" placeholder="Password">
+                    <input class="form-control form-control-lg" id="password" name="password" type="password" placeholder="Password">
                 </div>
                 <div class="form-group">
                     <label class="custom-control custom-checkbox">
                         <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Remember Me</span>
                     </label>
                 </div>
-                <input value="Sign in" name="email " type="submit" class="btn btn-primary btn-lg btn-block">
+                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
             </form>
         </div>
         <div class="card-footer bg-white p-0  ">

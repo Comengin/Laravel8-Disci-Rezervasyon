@@ -15,7 +15,7 @@
                         <a class="nav-link active" href="{{route('admin_category')}}" ><i class="fa fa-fw fa-user-circle"></i>Category<span class="badge badge-success">6</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{route('admin_products')}}" ><i class="fa fa-fw fa-rocket"></i>Products</a>
+                        <a class="nav-link active" href="{{route('admin_tedavi')}}" ><i class="fa fa-fw fa-rocket"></i>Tedavi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="{{route('admin_setting')}}">Settings</a>

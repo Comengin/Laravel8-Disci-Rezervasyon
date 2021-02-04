@@ -19,14 +19,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Category Tree Sub Category Gösterimi">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Home Page Setting Meta tags data User ve sayfa linkleri">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TedaviController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_102228_create_tedavis_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/_blank.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/admin/assets/libs/js/dashboard-ecommerce.js" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/admin/assets/libs/js/dashboard-ecommerce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ImageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tedavi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_05_112909_create_products_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_05_122922_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_102239_tedavi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_07_170717_create_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_112608_create_images_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_07_171015_image.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_112710_image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/assets/libs/js/dashboard-ecommerce.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/assets/libs/js/dashboard-ecommerce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/image_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/image_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tedavi.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tedavi_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tedavi_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -261,7 +283,8 @@
       <workItem from="1612056324495" duration="609000" />
       <workItem from="1612095521839" duration="11099000" />
       <workItem from="1612176639193" duration="23849000" />
-      <workItem from="1612347922112" duration="10683000" />
+      <workItem from="1612347922112" duration="23526000" />
+      <workItem from="1612426605563" duration="11177000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -452,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612134890325</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Home Page Setting Meta tags data User ve sayfa linkleri">
+      <created>1612386528144</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1612386528144</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,6 +525,7 @@
     <MESSAGE value="Setting Site Ayarlari:&#10;Setting.php&#10;setting_edit.blade.php&#10;SettingController.php" />
     <MESSAGE value="Relation Category Product One to Many İlişkisi" />
     <MESSAGE value="Category Tree Sub Category Gösterimi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Category Tree Sub Category Gösterimi" />
+    <MESSAGE value="Home Page Setting Meta tags data User ve sayfa linkleri" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home Page Setting Meta tags data User ve sayfa linkleri" />
   </component>
 </project>

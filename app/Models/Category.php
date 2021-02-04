@@ -13,7 +13,7 @@ class Category extends Model
     ];
     #One to Many
     public function products(){
-        return $this->hasMany(Product::class);
+        return $this->hasMany(Tedavi::class);
     }
     #One To Many Iverse
     public function parent(){

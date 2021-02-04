@@ -43,7 +43,7 @@ class HomeController extends Controller
             if (Auth::attempt($credentials)) {
                 $request->session()->regenerate();
 
-                return redirect()->session()->intended('admin');
+                return redirect()->intended('admin');
             }
             return back()->withErrors([
                 'email'=>'The provided credentials do not match our records.'

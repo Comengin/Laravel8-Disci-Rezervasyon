@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,10 +50,10 @@ Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('i
 */
 
 //Admin
-Route::/*middleware('aut')->*/prefix('admin')->group(function (){
+Route::middleware('auth')->prefix('admin')->group(function (){
 
     Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin_home');
-    //category
+    //Category
     Route::get('category',[\App\Http\Controllers\Admin\CategoryController::class, 'index'])->name('admin_category');
     Route::get('category/add',[\App\Http\Controllers\Admin\CategoryController::class, 'add'])->name('admin_category_add');
     Route::post('category/create',[\App\Http\Controllers\Admin\CategoryController::class, 'create'])->name('admin_category_create');
@@ -61,22 +62,22 @@ Route::/*middleware('aut')->*/prefix('admin')->group(function (){
     Route::get('category/delete/{id}',[\App\Http\Controllers\Admin\CategoryController::class, 'destroy'])->name('admin_category_delete');
     Route::get('category/show',[\App\Http\Controllers\Admin\CategoryController::class, 'show'])->name('admin_category_show');
 
-    #product
-    Route::prefix('product')->group(function (){
-        Route::get('/',[\App\Http\Controllers\Admin\ProductController::class, 'index'])->name('admin_products');
-        Route::get('create',[\App\Http\Controllers\Admin\ProductController::class, 'create'])->name('admin_product_add');
-        Route::post('store',[\App\Http\Controllers\Admin\ProductController::class, 'store'])->name('admin_product_store');
-        Route::get('edit/{id}',[\App\Http\Controllers\Admin\ProductController::class, 'edit'])->name('admin_product_edit');
-        Route::post('update/{id}',[\App\Http\Controllers\Admin\ProductController::class, 'update'])->name('admin_product_update');
-        Route::get('delete/{id}',[\App\Http\Controllers\Admin\ProductController::class, 'destroy'])->name('admin_product_delete');
-        Route::get('show',[\App\Http\Controllers\Admin\ProductController::class, 'show'])->name('admin_product_show');
+    #Tedavi
+    Route::prefix('tedavi')->group(function (){
+        Route::get('/',[\App\Http\Controllers\Admin\TedaviController::class, 'index'])->name('admin_tedavi');
+        Route::get('create',[\App\Http\Controllers\Admin\TedaviController::class, 'create'])->name('admin_tedavi_add');
+        Route::post('store',[\App\Http\Controllers\Admin\TedaviController::class, 'store'])->name('admin_tedavi_store');
+        Route::get('edit/{id}',[\App\Http\Controllers\Admin\TedaviController::class, 'edit'])->name('admin_tedavi_edit');
+        Route::post('update/{id}',[\App\Http\Controllers\Admin\TedaviController::class, 'update'])->name('admin_tedavi_update');
+        Route::get('delete/{id}',[\App\Http\Controllers\Admin\TedaviController::class, 'destroy'])->name('admin_tedavi_delete');
+        Route::get('show',[\App\Http\Controllers\Admin\TedaviController::class, 'show'])->name('admin_tedavi_show');
 
     });
-    #Product image gallery
+    #Tedavi image gallery
     Route::prefix('image')->group(function () {
-        Route::get('create/{product_id}', [\App\Http\Controllers\Admin\ImageController::class , 'create'])->name('admin_image_add');
-        Route::post('store/{product_id}', [\App\Http\Controllers\Admin\ImageController::class , 'store'])->name('admin_image_store');
-        Route::get('delete/{id}/{product_id}', [\App\Http\Controllers\Admin\ImageController::class , 'destroy'])->name('admin_image_delete');
+        Route::get('create/{tedavi_id}', [\App\Http\Controllers\Admin\ImageController::class , 'create'])->name('admin_image_add');
+        Route::post('store/{tedavi_id}', [\App\Http\Controllers\Admin\ImageController::class , 'store'])->name('admin_image_store');
+        Route::get('delete/{id}/{tedavi_id}', [\App\Http\Controllers\Admin\ImageController::class , 'destroy'])->name('admin_image_delete');
         Route::get('show', [\App\Http\Controllers\Admin\ImageController::class , 'show'])->name('admin_image_show');
     });
     #Setting
@@ -86,7 +87,7 @@ Route::/*middleware('aut')->*/prefix('admin')->group(function (){
 
 });
 
-Route::middleware('auth')->prefix('user')->namespace('user')->group(function () {
+Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function () {
     Route::get('/',[UserController::class,'index'])->name('profile');
 });
 
