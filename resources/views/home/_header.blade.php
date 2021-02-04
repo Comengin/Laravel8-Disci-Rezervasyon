@@ -19,11 +19,11 @@
                 <!--account-->
                 @auth
                     <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true"></div>
-                    <strong class="text-uppercase">{{Auth::user()->name}}|<a href="{{route('admin_login')}}">Logout</a></strong>
+                    <strong class="text-uppercase">{{Auth::user()->name}}|<a href="{{route('logout')}}">Logout</a></strong>
 
                 @endauth
                 @guest
-                    <a href="{{route('admin_login')}}" class="text-uppercase">Login</a>
+                    <a href="/login" class="text-uppercase">Login</a>
                 @endguest
                 <!--<ul class="custom-menu">
                     <li><a href="#"><i class="fa fa-user-o"></i>My Account</a></li>
