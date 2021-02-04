@@ -25,13 +25,6 @@
                 @guest
                     <a href="/login" class="text-uppercase">Login</a>
                 @endguest
-                <!--<ul class="custom-menu">
-                    <li><a href="#"><i class="fa fa-user-o"></i>My Account</a></li>
-                    <li><a href="#"><i class="fa fa-user-o"></i>My Wishlist</a></li>
-                    <li><a href="#"><i class="fa fa-user-o"></i>Compare</a></li>
-                    <li><a href="#"><i class="fa fa-user-o"></i>Ckeckout</a></li>
-
-                </ul>-->
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">

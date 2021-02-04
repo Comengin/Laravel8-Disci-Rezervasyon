@@ -26,6 +26,24 @@
 
                     <div class="col-md-4">
                         <h3 class="aside-title">Iletisim Formu</h3>
+                        <div class="agile-about-right-img">
+                            @include('home.message')
+                            <form action="{{route('sendmessage')}}" method="post">
+                                @csrf
+                                <p>User Name </p>
+                                <input type="text" name="name"/>
+                                <p>Phone number</p>
+                                <input type="text" name="phone"/>
+                                <p>User Email </p>
+                                <input type="text" name="email"/>
+                                <p>Subject</p>
+                                <input type="text" name="subject"/>
+                                <p>Your message</p>
+                                <textarea name="message" rows="2" cols="34"></textarea>
+                                <input type="submit" value="Send Message">
+                            </form>
+                            <div class="clearfix"> </div>
+                        </div>
                     </div>
                 </div>
             </div>

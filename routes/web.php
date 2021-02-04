@@ -41,6 +41,7 @@ Route::get('/contact',[HomeController::class,'contact'])->name('contact');
 Route::get('/gallery',[HomeController::class,'gallery'])->name('gallery');
 Route::post('/faq',[HomeController::class,'faq'])->name('faq');
 Route::get('/categories',[HomeController::class,'categories'])->name('categories');
+Route::post('/sendmessage',[HomeController::class,'sendmessage'])->name('sendmessage');
 
 /*
 Route::get('/test/{id}', [HomeController::class, 'test'])->where('id', '[0-9]+');
@@ -71,6 +72,15 @@ Route::middleware('auth')->prefix('admin')->group(function (){
         Route::post('update/{id}',[\App\Http\Controllers\Admin\TedaviController::class, 'update'])->name('admin_tedavi_update');
         Route::get('delete/{id}',[\App\Http\Controllers\Admin\TedaviController::class, 'destroy'])->name('admin_tedavi_delete');
         Route::get('show',[\App\Http\Controllers\Admin\TedaviController::class, 'show'])->name('admin_tedavi_show');
+
+    });
+    #Message
+    Route::prefix('message')->group(function (){
+        Route::get('/',[\App\Http\Controllers\Admin\MessageController::class, 'index'])->name('admin_message');
+        Route::get('edit/{id}',[\App\Http\Controllers\Admin\MessageController::class, 'edit'])->name('admin_message_edit');
+        Route::post('update/{id}',[\App\Http\Controllers\Admin\MessageController::class, 'update'])->name('admin_message_update');
+        Route::get('delete/{id}',[\App\Http\Controllers\Admin\MessageController::class, 'destroy'])->name('admin_message_delete');
+        Route::get('show',[\App\Http\Controllers\Admin\MessageController::class, 'show'])->name('admin_message_show');
 
     });
     #Tedavi image gallery

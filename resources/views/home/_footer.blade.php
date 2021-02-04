@@ -19,13 +19,20 @@
                 <strong>Email :</strong>{{$setting->email}}<br>
             </div>
             <div class="col-md-4 w3agile_footer_grid w3agile_footer_grid1">
+
                 <h3>Navigation</h3>
                 <ul>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="about">About</a></li>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="gallery">Gallery</a></li>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="team">Dentists</a></li>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a class="scroll" href="contact">Contact</a></li>
+                @guest
+                    <li><i class="fa fa-long-arrow-right"></i><a href="/login">Login</a></li>
+                @endguest
+                @auth
+                    <li><i class="fa fa-long-arrow-right"></i><a href="{{route('myprofile')}}">My Account</a></li>
+                    <li><i class="fa fa-long-arrow-right"></i><a href="gallery">My Wishlist</a></li>
+                    <li><i class="fa fa-long-arrow-right"></i><a href="team">Compare</a></li>
+                    <li><i class="fa fa-long-arrow-right"></i><a href="contact">Ckeckout</a></li>
+                    <li><i class="fa fa-long-arrow-right"></i><a href="{{route('logout')}}">Logout</a></li>
                 </ul>
+                @endauth
             </div>
             <div class="clearfix"> </div>
         </div>

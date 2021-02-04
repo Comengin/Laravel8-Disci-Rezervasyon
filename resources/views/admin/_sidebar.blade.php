@@ -18,6 +18,9 @@
                         <a class="nav-link active" href="{{route('admin_tedavi')}}" ><i class="fa fa-fw fa-rocket"></i>Tedavi</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active" href="{{route('admin_message')}}">Contact Message</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" href="{{route('admin_setting')}}">Settings</a>
                     </li>
                 </ul>
