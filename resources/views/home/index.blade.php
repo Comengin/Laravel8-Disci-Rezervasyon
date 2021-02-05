@@ -9,7 +9,7 @@
 @section('keywords', $setting->keywords)
 
 @section('content')
-    @include('home._home')
+    @include('home._slider')
     <!-- /schedule-grids -->
     <div class="top-agile-wthree-grids">
         <div class="col-md-4 schedule-agile ">

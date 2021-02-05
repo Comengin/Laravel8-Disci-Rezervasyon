@@ -42,6 +42,7 @@ Route::get('/gallery',[HomeController::class,'gallery'])->name('gallery');
 Route::post('/faq',[HomeController::class,'faq'])->name('faq');
 Route::get('/categories',[HomeController::class,'categories'])->name('categories');
 Route::post('/sendmessage',[HomeController::class,'sendmessage'])->name('sendmessage');
+Route::get('/tedavi/{id}/{price}',[HomeController::class,'tedavi'])->name('tedavi');
 
 /*
 Route::get('/test/{id}', [HomeController::class, 'test'])->where('id', '[0-9]+');

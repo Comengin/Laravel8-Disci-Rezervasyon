@@ -19,21 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Hakkimizda Referans ve Contact Sayfaları">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MessageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_165029_create_messages_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_165609_message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/message.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/message_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/message.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment=" Contact Mesajları ve Admin panelinde yönetim&#10; message.blade.php&#10; Message.php&#10; message_edit.blade.php&#10; MessageController.php">
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/Gülüş Tasarımı/LAMİNA-PORSELEN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/Gülüş Tasarımı/download (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş beyazlatma/download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş beyazlatma/unnamed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş dolgusu/kanal-tedavisi-set.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş dolgusu/kanal-tedavisi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/lingual-ortodonti-1024x333.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/lingual-ortodonti.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/lingual.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/porselen-dis-teli.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/sabit-ortodontik-tedavi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/seramik-kron-onurozturk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/unnamed (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/ortodonti/unnamed.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -270,7 +275,7 @@
       <workItem from="1612095521839" duration="11099000" />
       <workItem from="1612176639193" duration="23849000" />
       <workItem from="1612347922112" duration="23526000" />
-      <workItem from="1612426605563" duration="40496000" />
+      <workItem from="1612426605563" duration="47028000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -496,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612457312809</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary=" Contact Mesajları ve Admin panelinde yönetim&#10; message.blade.php&#10; Message.php&#10; message_edit.blade.php&#10; MessageController.php">
+      <created>1612478966240</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1612478966240</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +528,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="index changing" />
     <MESSAGE value="index.html &#10;home.blade.php&#10;_banner.blade.php&#10;changing&#10;login.html&#10;signup.html&#10;adding" />
     <MESSAGE value="index.html &#10;home.blade.php&#10;index.blade.php&#10;changing" />
     <MESSAGE value="_footer.blade.php&#10;home.blade.php&#10;index.blade.php&#10;changing" />
@@ -541,6 +552,7 @@
     <MESSAGE value="User Profile Page oluşturma Jetstream sayfasını panele alma" />
     <MESSAGE value="User Profile Photo Ek Alanlar Ekleme Guncelleme" />
     <MESSAGE value="Hakkimizda Referans ve Contact Sayfaları" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hakkimizda Referans ve Contact Sayfaları" />
+    <MESSAGE value=" Contact Mesajları ve Admin panelinde yönetim&#10; message.blade.php&#10; Message.php&#10; message_edit.blade.php&#10; MessageController.php" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Contact Mesajları ve Admin panelinde yönetim&#10; message.blade.php&#10; Message.php&#10; message_edit.blade.php&#10; MessageController.php" />
   </component>
 </project>
