@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Faq;
 use App\Models\Message;
 use App\Models\Setting;
 use App\Models\Tedavi;
@@ -60,7 +61,8 @@ class HomeController extends Controller
         return redirect()->route('contact')->with('success','Mesajınız Kaydedilmiştir. Teşekkür ederiz.');
     }
     public function faq(){
-        return view('home.about');
+        $datalist = Faq::all()->sortBy('id');
+        return view('home.faq',['datalist'=>$datalist]);
     }
     public function login(){
         return view('admin.login');

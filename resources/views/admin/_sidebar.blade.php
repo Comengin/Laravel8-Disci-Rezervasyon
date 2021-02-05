@@ -18,10 +18,13 @@
                         <a class="nav-link active" href="{{route('admin_tedavi')}}" ><i class="fa fa-fw fa-rocket"></i>Tedavi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{route('admin_message')}}">Contact Message</a>
+                        <a class="nav-link active" href="{{route('admin_message')}}"><i class="fa fa-fw fa-circle"></i>Contact Message</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{route('admin_setting')}}">Settings</a>
+                        <a class="nav-link active" href="{{route('admin_setting')}}"><i class="fa fa-fw fa-circle"></i>Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{route('admin_faq')}}"><i class="fa fa-fw fa-circle"></i>Faq</a>
                     </li>
                 </ul>
             </div>

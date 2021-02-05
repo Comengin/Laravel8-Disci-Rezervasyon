@@ -28,6 +28,6 @@
 @section('content')
 @show
 @include('home._footer')
-
+@yield('footerjs')
 </body>
 </html>
