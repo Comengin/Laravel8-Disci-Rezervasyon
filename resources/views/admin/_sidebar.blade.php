@@ -12,19 +12,22 @@
                         Menu
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link active" href="{{route('admin_category')}}" ><i class="fa fa-fw fa-user-circle"></i>Category<span class="badge badge-success">6</span></a>
+                        <a class="nav-link" href="{{route('admin_category')}}" ><i class="fa fa-fw fa-user-circle"></i>Category<span class="badge badge-success">6</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{route('admin_tedavi')}}" ><i class="fa fa-fw fa-rocket"></i>Tedavi</a>
+                        <a class="nav-link" href="{{route('admin_tedavi')}}" > <i class="fas fa-align-justify"></i>Tedavi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{route('admin_message')}}"><i class="fa fa-fw fa-circle"></i>Contact Message</a>
+                        <a class="nav-link" href="{{route('admin_message')}}"><i class="far fa-comment-alt"></i>Contact Message</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{route('admin_setting')}}"><i class="fa fa-fw fa-circle"></i>Settings</a>
+                        <a class="nav-link" href="{{route('admin_setting')}}"><i class="fas fa-cog mr-2"></i>Settings</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{route('admin_faq')}}"><i class="fa fa-fw fa-circle"></i>Faq</a>
+                        <a class="nav-link" href="{{route('admin_faq')}}"><i class="far fa-comment"></i>Faq</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('admin_procces')}}" ><i class="fa fa-fw fa-rocket"></i>Procces</a>
                     </li>
                 </ul>
             </div>

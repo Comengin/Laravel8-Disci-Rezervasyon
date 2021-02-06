@@ -19,23 +19,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Home Page Dinamik Slider">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/FaqController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Faq.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_210916_create_faqs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_210946_faq.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/faq.blade.php" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Frequently Asked Question Accordion Menu Sıkça Sorulan Sorular">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProccesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProccesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Procces.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Randevu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_233357_create_procces_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_234304_create_randevus_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_234857_procces.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_234922_randevu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_06_143257_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_06_143658_roles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_06_144523_create_role_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_06_145754_role_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/procces.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/user_procces.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/user_randevu_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/admin/product images/diş beyazlatma/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş beyazlatma/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Tedavi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tedavi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,15 +201,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\codes\php\laravelj\resources\views\home" />
       <recent name="C:\codes\php\laravelj\resources\views\admin" />
+      <recent name="C:\codes\php\laravelj\resources\views\home" />
       <recent name="C:\codes\php\laravelj\resources\views\layouts" />
       <recent name="C:\codes\php\laravelj\routes" />
       <recent name="C:\codes\php\laravelj\public\assets\css" />
@@ -273,7 +283,8 @@
       <workItem from="1612176639193" duration="23849000" />
       <workItem from="1612347922112" duration="23526000" />
       <workItem from="1612426605563" duration="47821000" />
-      <workItem from="1612519266432" duration="14426000" />
+      <workItem from="1612519266432" duration="22148000" />
+      <workItem from="1612603774376" duration="25376000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -513,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612489515440</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Frequently Asked Question Accordion Menu Sıkça Sorulan Sorular">
+      <created>1612567089253</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1612567089253</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +551,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="index.html &#10;home.blade.php&#10;index.blade.php&#10;changing" />
     <MESSAGE value="_footer.blade.php&#10;home.blade.php&#10;index.blade.php&#10;changing" />
     <MESSAGE value="_schedule.blade.php&#10;deleting" />
     <MESSAGE value="changing in all files in the project" />
@@ -558,6 +575,7 @@
     <MESSAGE value="Hakkimizda Referans ve Contact Sayfaları" />
     <MESSAGE value=" Contact Mesajları ve Admin panelinde yönetim&#10; message.blade.php&#10; Message.php&#10; message_edit.blade.php&#10; MessageController.php" />
     <MESSAGE value="Home Page Dinamik Slider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home Page Dinamik Slider" />
+    <MESSAGE value="Frequently Asked Question Accordion Menu Sıkça Sorulan Sorular" />
+    <option name="LAST_COMMIT_MESSAGE" value="Frequently Asked Question Accordion Menu Sıkça Sorulan Sorular" />
   </component>
 </project>

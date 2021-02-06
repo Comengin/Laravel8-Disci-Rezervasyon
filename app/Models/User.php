@@ -58,4 +58,13 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function randevu(){
+        return $this->hasMany(Randevu::class);
+    }
+    public function roles(){
+        return $this->belongsToMany(Role::class);
+    }
+
+
 }
