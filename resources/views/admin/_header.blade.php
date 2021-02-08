@@ -9,6 +9,7 @@
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto navbar-right-top">
+                @include('home.message')
                 <li class="nav-item">
                     <div id="custom-search" class="top-search-bar">
                         <input class="form-control" type="text" placeholder="Search..">
@@ -94,14 +95,14 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown nav-user">
-                    <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('assets')}}/admin/assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                    <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">@if(Auth::user()->profile_photo_path)<img src="{{Storage::url(Auth::user()->profile_photo_path)}}" alt="User Image" class="user-avatar-md rounded-circle">@endif</a>
                     <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                         <div class="nav-user-info">
                             <h5 class="mb-0 text-white nav-user-name">Bairam Kuliev </h5>
                             <span class="status"></span><span class="ml-2">Available</span>
                         </div>
-                        <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                        <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                        <a class="dropdown-item" href="{{route('myprofile')}}"><i class="fas fa-user mr-2"></i>Account</a>
+                        <a class="dropdown-item" href="{{route('admin_setting')}}"><i class="fas fa-cog mr-2"></i>Setting</a>
                         @auth
                             <a href="#" class="d-block">{{Auth::user()->name}}</a>
                             <a class="dropdown-item d-block" href="{{route('logout')}}"><i class="fas fa-power-off mr-2"></i>Logout</a>

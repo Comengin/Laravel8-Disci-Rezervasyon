@@ -35,7 +35,7 @@
                         <li><a href="{{route('references')}}">References</a></li>
                         <li><a href="{{route('contact')}}">Сontact</a></li>
                         <li><a href="{{route('gallery')}}">Gallery</a></li>
-                        <li><a href="{{route('faq')}}">Faq</a></li>
+
                     </ul>
                 </nav>
             </div>

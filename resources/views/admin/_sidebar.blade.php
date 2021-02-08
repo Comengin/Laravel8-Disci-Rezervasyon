@@ -11,6 +11,9 @@
                     <li class="nav-divider">
                         Menu
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('admin_users')}}" ><i class=" fas fa-users"></i>Users</a>
+                    </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="{{route('admin_category')}}" ><i class="fa fa-fw fa-user-circle"></i>Category<span class="badge badge-success">6</span></a>
                     </li>

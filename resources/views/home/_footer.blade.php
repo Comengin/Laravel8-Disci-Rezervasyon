@@ -30,9 +30,13 @@
                     <li><i class="fa fa-long-arrow-right"></i><a href="gallery">My Wishlist</a></li>
                     <li><i class="fa fa-long-arrow-right"></i><a href="team">Compare</a></li>
                     <li><i class="fa fa-long-arrow-right"></i><a href="contact">Ckeckout</a></li>
-                    <li><i class="fa fa-long-arrow-right"></i><a href="{{route('logout')}}">Logout</a></li>
-                </ul>
                 @endauth
+                    <li><i class="fa fa-long-arrow-right"></i><a href="{{route('faq')}}">Faq</a></li>
+                @auth
+                    <li><i class="fa fa-long-arrow-right"></i><a href="{{route('logout')}}">Logout</a></li>
+                @endauth
+
+                </ul>
             </div>
             <div class="clearfix"> </div>
         </div>
