@@ -1,18 +1,16 @@
 <!-- header -->
+@php
+    $parentCategories=\App\Http\Controllers\HomeController::categoryList()
+@endphp
 
 <div class="w3_navigation">
     <div class="container">
         <nav class="navbar navbar-default">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+
                 <div class="logo">
-                    <h1><a class="navbar-brand" href="index.html"><span class="one">D</span>ental Pro</a></h1>
+                    <h1><a class="navbar-brand" href="{{route('home')}}"><span class="one">D</span>ental Pro</a></h1>
                 </div>
             </div>
             <div class="pull-right">
@@ -34,8 +32,7 @@
                         <li><a href="{{route('aboutus')}}">About</a></li>
                         <li><a href="{{route('references')}}">References</a></li>
                         <li><a href="{{route('contact')}}">Сontact</a></li>
-                        <li><a href="{{route('gallery')}}">Gallery</a></li>
-
+                        <li>@include('home._category')</li>
                     </ul>
                 </nav>
             </div>

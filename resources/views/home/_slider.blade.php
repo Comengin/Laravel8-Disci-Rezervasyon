@@ -11,7 +11,7 @@
                             <img src="{{Storage::url($rs->image)}}" style="height: 150px" alt="">
                             <h1>{{$rs->title}}</h1>
                             <p>{{$rs->price}}</p>
-                            <a href="{{route('tedavi',['id'=>$rs->id, 'price'=>$rs->price])}}" class="btn-primary">Get appointment now</a>
+                            <a href="{{route('tedavi',['id'=>$rs->id])}}" class="btn-primary">Get Detail</a>
                         </div>
                     @endforeach
                 </ul>

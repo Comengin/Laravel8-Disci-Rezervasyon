@@ -32,10 +32,17 @@ class HomeController extends Controller
         ];
         return view('home.index',$data);
     }
-    public function tedavi($id,$price){
-        $data = Tedavi::first($id);
+    public function tedavi($id){
+        $data = Tedavi::where('category_id',$id)->get();
         print_r($data);
         exit();
+    }
+    public function categoryservices($id){
+        $datalist = Tedavi::where('category_id',$id)->get();
+        $data = Category::find($id);
+        #print_r($data);
+        #exit();
+        return view('home.category_services', ['data'=>$data,'datalist'=>$datalist]);
     }
     public function aboutus(){
         $setting = Setting::first();
