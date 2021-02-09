@@ -17,7 +17,7 @@
                 <!--account-->
                 @auth
                     <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true"></div>
-                    <strong class="text-uppercase">{{Auth::user()->name}} {{Auth::user()->roles->pluck('name')}}|<a href="{{route('logout')}}">Logout</a></strong>
+                    <strong class="text-uppercase">{{Auth::user()->name}} |<a href="{{route('logout')}}">Logout</a></strong>
 
                 @endauth
                 @guest

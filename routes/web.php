@@ -45,7 +45,8 @@ Route::get('/categories',[HomeController::class,'categories'])->name('categories
 Route::post('/sendmessage',[HomeController::class,'sendmessage'])->name('sendmessage');
 Route::get('/tedavi/{id}',[HomeController::class,'tedavi'])->name('tedavi');
 Route::get('/categoryservices/{id}',[HomeController::class,'categoryservices'])->name('categoryservices');
-
+Route::get('/tedavilist/{search}',[HomeController::class,'tedavilist'])->name('tedavilist');
+Route::post('/gettedavi',[HomeController::class,'gettedavi'])->name('gettedavi');
 /*
 Route::get('/test/{id}', [HomeController::class, 'test'])->where('id', '[0-9]+');
 string icin

@@ -150,11 +150,13 @@
             <div class="col-xs-2 about-grid2-left">
                 <i class="fa fa-user" aria-hidden="true"></i>
             </div>
-            <div class="col-xs-10 about-grid2-right">
-                <form action="#" method="post">
-                    <input type="search" placeholder="Search..." name="Search..." required="">
-                    <input type="submit" value="">
+            <div class="col-xs-10 ">
+                <form action="{{route('gettedavi')}}" method="post">
+                    @csrf
+                    @livewire('search')
+                    <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
                 </form>
+                @livewireScripts
             </div>
             <div class="clearfix"></div>
 

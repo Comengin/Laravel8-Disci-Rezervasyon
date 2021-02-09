@@ -19,10 +19,56 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Category Tedavi Hizmetlerini Listeleme">
-      <change afterPath="$PROJECT_DIR$/resources/views/home/tedavi_detail.blade.php" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Tedavi Detail Hizmetler İçerik Detay Sayfası">
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/markdown/policy.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/markdown/terms.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/confirm-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/search_tedavis.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/search.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/policy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/terms.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/ApiTokenPermissionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/AuthenticationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/BrowserSessionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/CreateApiTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/DeleteAccountTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/DeleteApiTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/EmailVerificationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordConfirmationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordResetTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/ProfileInformationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/TwoFactorAuthenticationSettingsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/UpdatePasswordTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +309,7 @@
       <workItem from="1612603774376" duration="42432000" />
       <workItem from="1612721350911" duration="7552000" />
       <workItem from="1612776747472" duration="41929000" />
-      <workItem from="1612859754867" duration="638000" />
+      <workItem from="1612859754867" duration="6401000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -531,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612831472974</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Tedavi Detail Hizmetler İçerik Detay Sayfası">
+      <created>1612860432989</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1612860432989</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="admin adding" />
     <MESSAGE value="admin changing" />
     <MESSAGE value="login changing" />
     <MESSAGE value="login adding" />
@@ -576,6 +628,7 @@
     <MESSAGE value="User Admin Role Permission Yetkilendirmeler" />
     <MESSAGE value=" Admin Panel User Role management" />
     <MESSAGE value="Category Tedavi Hizmetlerini Listeleme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Category Tedavi Hizmetlerini Listeleme" />
+    <MESSAGE value="Tedavi Detail Hizmetler İçerik Detay Sayfası" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tedavi Detail Hizmetler İçerik Detay Sayfası" />
   </component>
 </project>

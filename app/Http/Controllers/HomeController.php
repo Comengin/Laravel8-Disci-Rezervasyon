@@ -33,6 +33,21 @@ class HomeController extends Controller
         ];
         return view('home.index',$data);
     }
+    public function gettedavi(Request $request){
+        $search=$request->input('search');
+        $count = Tedavi::where('title','like','%'.$search.'%')->get()->count();
+        if($count==1){
+            $data = Tedavi::where('title','like','%'.$search.'%')->first();
+            return redirect()->route('tedavi',['id'=>$data->id]);
+        }
+        else{
+            return redirect()->route('tedavilist',['search'=>$search]);
+        }
+    }
+    public function tedavilist($search){
+        $datalist = Tedavi::where('title','like','%'.$search.'%')->get();
+        return view('home.search_tedavis',['search'=>$search,'datalist'=>$datalist]);
+    }
     public function tedavi($id){
         $data = Tedavi::find($id);
         $datalist = Image::where('tedavi_id',$id)->get();
