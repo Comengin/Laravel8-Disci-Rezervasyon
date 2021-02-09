@@ -19,23 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="User Admin Role Permission Yetkilendirmeler">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user_roles.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user_show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Category Tedavi Hizmetlerini Listeleme">
+      <change afterPath="$PROJECT_DIR$/resources/views/home/tedavi_detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_04_135656_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_07_195030_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_04_140945_add_address_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_140945_add_address_to_users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_content.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,18 +177,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\codes\php\laravelj\resources\views\admin" />
       <recent name="C:\codes\php\laravelj\resources\views\home" />
+      <recent name="C:\codes\php\laravelj\app\Http\Controllers" />
+      <recent name="C:\codes\php\laravelj\resources\views\admin" />
       <recent name="C:\codes\php\laravelj\resources\views\layouts" />
       <recent name="C:\codes\php\laravelj\routes" />
-      <recent name="C:\codes\php\laravelj\public\assets\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\codes\php\laravelj\resources\views\layouts" />
@@ -275,7 +262,8 @@
       <workItem from="1612519266432" duration="22148000" />
       <workItem from="1612603774376" duration="42432000" />
       <workItem from="1612721350911" duration="7552000" />
-      <workItem from="1612776747472" duration="2209000" />
+      <workItem from="1612776747472" duration="41929000" />
+      <workItem from="1612859754867" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -529,7 +517,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612641477860</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary=" Admin Panel User Role management">
+      <created>1612781975193</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1612781975193</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Category Tedavi Hizmetlerini Listeleme">
+      <created>1612831472973</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1612831472974</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,8 +551,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="_schedule.blade.php&#10;deleting" />
-    <MESSAGE value="changing in all files in the project" />
     <MESSAGE value="admin adding" />
     <MESSAGE value="admin changing" />
     <MESSAGE value="login changing" />
@@ -574,6 +574,8 @@
     <MESSAGE value="Home Page Dinamik Slider" />
     <MESSAGE value="Frequently Asked Question Accordion Menu Sıkça Sorulan Sorular" />
     <MESSAGE value="User Admin Role Permission Yetkilendirmeler" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Admin Role Permission Yetkilendirmeler" />
+    <MESSAGE value=" Admin Panel User Role management" />
+    <MESSAGE value="Category Tedavi Hizmetlerini Listeleme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Category Tedavi Hizmetlerini Listeleme" />
   </component>
 </project>

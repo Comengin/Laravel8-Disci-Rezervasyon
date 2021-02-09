@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Faq;
+use App\Models\Image;
 use App\Models\Message;
 use App\Models\Setting;
 use App\Models\Tedavi;
@@ -33,9 +34,11 @@ class HomeController extends Controller
         return view('home.index',$data);
     }
     public function tedavi($id){
-        $data = Tedavi::where('category_id',$id)->get();
-        print_r($data);
-        exit();
+        $data = Tedavi::find($id);
+        $datalist = Image::where('tedavi_id',$id)->get();
+        #print_r($data);
+        #exit();
+        return view('home.tedavi_detail',['data'=>$data,'datalist'=>$datalist]);
     }
     public function categoryservices($id){
         $datalist = Tedavi::where('category_id',$id)->get();
