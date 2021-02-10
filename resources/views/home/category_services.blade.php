@@ -23,12 +23,16 @@
                             <img src="{{Storage::url($rs->image)}}" alt=" " class="img-responsive" />
                             <h1><b>Price: {{$rs->price}}Tl</b></h1>
                         </div>
-                        <div class="col-md-8">
-                            <h2>{{$rs->description}}</h2>
+
+                        <div class="col-md-7 w3ls-agile-left">
+                            <p>{{$rs->description}}</p>
+                            <a href="{{route('tedavi',['id'=>$data->id])}}" data-toggle="modal" data-target="#myModal1" class="read">Read More</a>
+                            <!-- Modal1 -->
+
+                            <!-- //Modal1 -->
+
                         </div>
-                        <hr>
-                        <a href="{{route('tedavi',['id'=>$data->id])}}" class="btn-primary" style="font-size: 18px; background-color: white; color: #0b2e13">For more detail click here.</a>
-                    </div>
+                        <div class="clearfix"> </div></div>
                 @endforeach
                 <div class="clearfix"> </div>
 

@@ -41,7 +41,7 @@
                                                          <tr>
                                                              <td>{{$row->name}}</td>
                                                              <td>
-                                                                 <a href="{{route('admin_user_role_delete',['userid'=>$data->id,'roleid'=>$row->id])}}" onclick="return !window.open(this.href, '','top=50 left=100 width=1100, height=700 ')"></a>
+                                                                 <a href="{{route('admin_user_role_delete',['userid'=>$data->id,'roleid'=>$row->id])}}" onclick="return confirm('Delete! Are you sure?')"><img src="{{asset('assets/admin/images')}}/trash.png" height="25"></a>
                                                              </td>
                                                          </tr>
                                                      @endforeach
@@ -51,7 +51,7 @@
                                          <tr>
                                              <th>Add Roles</th>
                                              <td>
-                                                 <form role="form" action="{{route('admin_user_role_delete',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                                                 <form role="form" action="{{route('admin_user_role_add',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                                      @csrf
                                                      <select name="roleid">
                                                          @foreach($datalist as $rs)

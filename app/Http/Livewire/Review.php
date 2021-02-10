@@ -1,0 +1,34 @@
+<?php
+
+namespace App\Http\Livewire;
+
+use App\Models\Tedavi;
+use Livewire\Component;
+
+class Review extends Component
+{
+    public $record, $subject, $review,$tedavi_id,$rate;
+    public function mount($id)
+    {
+        $this->record = Tedavi::findOrFail($id);
+        $this->tedavi_id=$this->record->id;
+    }
+    public function render()
+    {
+        return view('livewire.review');
+    }
+    private function resetInput(){
+        $this->subject = null;
+        $this->review = null;
+        $this->rate = null;
+        $this->tedavi_id = null;
+        $this->IP = null;
+    }
+    public function store(){
+        $this->validate([
+           'subject'=>'required|min:5',
+           'review'=>'required|min:10',
+           'rate'=>'required'
+        ]);
+    }
+}

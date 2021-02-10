@@ -16,6 +16,8 @@
                 <li class="active">Сontact</li>
             </ul>
         </div>
+        <h3 class="w3l_head">Contact Us</h3>
+        <p class="w3ls_head_para">Send us a message</p>
         <div class="section">
             <div class="container">
                 <div class="row">

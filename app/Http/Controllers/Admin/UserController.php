@@ -78,9 +78,9 @@ class UserController extends Controller
     {
         $data = User::find($id);
         $data ->name = $request->input('name');
-        $data ->name = $request->input('email');
-        $data ->name = $request->input('phone');
-        $data ->name = $request->input('address');
+        $data ->email = $request->input('email');
+        $data ->phone = $request->input('phone');
+        $data ->address = $request->input('address');
         if($request->file('image')!=null){
             $data->profile_photo_path = Storage::putFile('profile-photos',$request->file('image'));
         }
@@ -95,15 +95,15 @@ class UserController extends Controller
     }
     public function user_role_store(Request $request,User $user,$id)
     {
-        $data = User::find($id);
-        $roled = $request->input('roleid');
-        $user->roles()->attach($roled);
+        $user = User::find($id);
+        $roleid = $request->input('roleid');
+        $user->roles()->attach($roleid);
         return redirect()->back()->with('success','Role added to user');
     }
-    public function user_role_delete(Request $request,User $user,$userid,$roled)
+    public function user_role_delete(Request $request,User $user,$userid,$roleid)
     {
         $user = User::find($userid);
-        $user->roles()->detach($roled);
+        $user->roles()->detach($roleid);
         return redirect()->back()->with('success','Role deleted from user');
     }
     /**

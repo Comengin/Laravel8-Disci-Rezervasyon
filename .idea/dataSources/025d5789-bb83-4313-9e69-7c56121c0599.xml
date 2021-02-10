@@ -1772,6 +1772,8 @@ tokenable_id</ColNames>
     <column id="497" parent="353" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="498" parent="353" name="name">
       <Position>2</Position>
@@ -1828,5 +1830,10 @@ tokenable_id</ColNames>
       <Position>14</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
+    <key id="511" parent="353" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>
