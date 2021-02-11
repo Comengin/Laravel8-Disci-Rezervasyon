@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Review extends Model
 {
     use HasFactory;
-    protected $fillable = [
+    protected $fillable=[
         'product_id',
         'user_id',
         'IP',
@@ -16,7 +16,10 @@ class Review extends Model
         'review',
         'rate',
     ];
-    public function tedavis(){
-        return $this->belongsTo(Tedavi::class);
+    public function product(){
+        return $this->belongsTo(Product::class);
+    }
+    public function user(){
+        return $this->belongsTo(User::class);
     }
 }

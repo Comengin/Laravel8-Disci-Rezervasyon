@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProccesController;
+use App\Http\Controllers\RandevuController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -47,6 +48,7 @@ Route::get('/tedavi/{id}',[HomeController::class,'tedavi'])->name('tedavi');
 Route::get('/categoryservices/{id}',[HomeController::class,'categoryservices'])->name('categoryservices');
 Route::get('/tedavilist/{search}',[HomeController::class,'tedavilist'])->name('tedavilist');
 Route::post('/gettedavi',[HomeController::class,'gettedavi'])->name('gettedavi');
+Route::post('/randevual',[HomeController::class,'randevual'])->name('randevual');
 /*
 Route::get('/test/{id}', [HomeController::class, 'test'])->where('id', '[0-9]+');
 string icin
@@ -56,10 +58,21 @@ Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('i
 //User
 Route::middleware('auth')->prefix('user')->namespace('user')->group(function () {
     Route::get('user/profile',[UserController::class,'index'])->name('userprofile');
+    #Randevu
+    Route::prefix('randevu')->group(function (){
+        Route::get('/',[RandevuController::class, 'index'])->name('user_randevu');
+        Route::get('create', [RandevuController::class , 'create'])->name('user_randevu_add');
+        Route::post('store', [RandevuController::class , 'store'])->name('user_randevu_store');
+        Route::get('edit/{id}',[RandevuController::class, 'edit'])->name('user_randevu_edit');
+        Route::post('update/{id}',[RandevuController::class, 'update'])->name('user_randevu_update');
+        Route::get('delete/{id}',[RandevuController::class, 'destroy'])->name('user_randevu_delete');
+        Route::get('show',[RandevuController::class, 'show'])->name('user_randevu_show');
+
+    });
     #Procces
     Route::prefix('procces')->group(function (){
         Route::get('/',[ProccesController::class, 'index'])->name('user_procces');
-        Route::get('create', [ProccesController::class , 'create'])->name('user_procces_add');
+        Route::post('create', [ProccesController::class , 'create'])->name('user_procces_add');
         Route::post('store', [ProccesController::class , 'store'])->name('user_procces_store');
         Route::get('edit/{id}',[ProccesController::class, 'edit'])->name('user_procces_edit');
         Route::post('update/{id}',[ProccesController::class, 'update'])->name('user_procces_update');

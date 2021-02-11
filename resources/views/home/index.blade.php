@@ -174,5 +174,36 @@
         </div>
         <div class="clearfix"></div>
     </div>
+    <!--/news-->
+    <div class="news">
+        <div class="container">
+            <h3 class="w3l_head">Tercih Edilen Tedavi Türleri</h3>
+            <p class="w3ls_head_para">See Our Works</p>
+            <div class="agileits_w3layouts_news_grids">
+                <ul id="flexiselDemo1">
+                    @foreach($picked as $rs)
+                    <li>
+                        <div class="news-grid">
+                            <img src="{{Storage::url($rs->image)}}" alt="">
+                            <div class="news-grid-info">
+                                <h5><span>Dental</span> Pro</h5>
+                                <h5>{{$rs->title}}</h5>
+                                <h1><b>{{$rs->price}}TL</b></h1>
+                                <div class="article-links">
+                                    <ul>
+                                        <li><a href="{{route('tedavi',['id'=>$rs->id])}}" class="text-uppercase">Review</a></li>
+                                        <li><a href="#"><i class="glyphicon glyphicon-heart-empty"></i><span>1,052</span></a></li>
+                                        <li><a href="#"><i class="glyphicon glyphicon-comment"></i><span>10K</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //news -->
     <!-- //schedule-grids -->
 @endsection

@@ -19,20 +19,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Tedavi Detail Hizmetler İçerik Detay Sayfası">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_09_190926_create_reviews_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_09_191018_review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/review.blade.php" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Admin Panel User Role management update">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RandevuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/Gülüş Tasarımı/ayym-porselen-lamina-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/Gülüş Tasarımı/unnamed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş beyazlatma/17861910_1452648528110949_2987484759582230746_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/product images/diş beyazlatma/dis_beyazlatma_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/randevu_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user_roles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user_roles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_05_233357_create_procces_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_233357_create_procces_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_05_234304_create_randevus_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_234304_create_randevus_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_06_144523_create_role_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_114338_create_role_user_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_06_145754_role_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_114453_role_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_09_190926_create_reviews_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_110114_create_reviews_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_09_191018_review.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_110202_review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/category_services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/category_services.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/tedavi_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/tedavi_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_procces.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_procces.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/review.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -275,7 +287,8 @@
       <workItem from="1612721350911" duration="7552000" />
       <workItem from="1612776747472" duration="41929000" />
       <workItem from="1612859754867" duration="6401000" />
-      <workItem from="1612880748177" duration="20506000" />
+      <workItem from="1612880748177" duration="64445000" />
+      <workItem from="1612990478151" duration="9168000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -550,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612860432989</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Admin Panel User Role management update">
+      <created>1612922015231</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1612922015231</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="admin changing" />
     <MESSAGE value="login changing" />
     <MESSAGE value="login adding" />
     <MESSAGE value="category database adding" />
@@ -595,6 +614,7 @@
     <MESSAGE value=" Admin Panel User Role management" />
     <MESSAGE value="Category Tedavi Hizmetlerini Listeleme" />
     <MESSAGE value="Tedavi Detail Hizmetler İçerik Detay Sayfası" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tedavi Detail Hizmetler İçerik Detay Sayfası" />
+    <MESSAGE value="Admin Panel User Role management update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Panel User Role management update" />
   </component>
 </project>

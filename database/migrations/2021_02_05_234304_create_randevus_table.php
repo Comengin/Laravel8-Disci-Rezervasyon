@@ -20,9 +20,8 @@ class CreateRandevusTable extends Migration
             $table->string('date',20);
             $table->string('time',20);
             $table->integer('hekim_id');
-            $table->float('price')->nullable();
-            $table->string('Ip',20);
-            $table->string('note',150);
+            $table->string('ip',20);
+            $table->string('note',150)->nullable();
             $table->string('status',30)->default('New');
             $table->timestamps();
         });

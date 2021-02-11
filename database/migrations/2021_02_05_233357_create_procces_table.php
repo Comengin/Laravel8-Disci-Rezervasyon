@@ -19,7 +19,7 @@ class CreateProccesTable extends Migration
             $table->integer('hekim_id');
             $table->integer('tedavi_id');
             $table->float('price')->nullable();
-            $table->string('note',150);
+            $table->string('note',150)->nullable();
             $table->string('status',30)->default('New');
             $table->timestamps();
         });

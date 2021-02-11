@@ -21,7 +21,7 @@
 
                 @endauth
                 @guest
-                    <a href="/login" class="text-uppercase">Login</a>
+                    <a href="/login" class="text-uppercase">Login </a>/<a class="text-uppercase" href="/register"> Join</a>
                 @endguest
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->

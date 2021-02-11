@@ -24,12 +24,15 @@ class HomeController extends Controller
     public function index(){
         $setting = Setting::first();
         $slider = Tedavi::select('id','title','image','price')->limit(6)->get();
+        $last=Tedavi::where('status','True')->limit(6)->orderByDesc('id')->get();
+        $picked=Tedavi::where('status','True')->limit(10)->inRandomOrder()->get();
         #print_r($slider);
         #exit();
         $data=[
             'setting'=>$setting,
             'slider'=>$slider,
-            'page'=>'home'
+            'last'=>$last,
+            'picked'=>$picked,
         ];
         return view('home.index',$data);
     }

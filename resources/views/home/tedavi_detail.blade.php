@@ -20,6 +20,7 @@
                     <h3 class="w3l_head">Gallery</h3>
                     <p class="w3ls_head_para">View Our Works</p>
                         <div class="work-grids">
+                            <h3>{{$data->title}}</h3>
                             @foreach($datalist as $rs)
                             <div class="work-grid">
                                 <a href="{{Storage::url($rs->image)}}" class="b-link-stripe b-animate-go swipebox"  title="">
@@ -30,7 +31,6 @@
                                         </h4>
                                     </div>
                                 </a>
-                                <p>{{$data->title}}</p>
                             </div>
                             @endforeach
                             <h1>Price: {{$data->price}}</h1>

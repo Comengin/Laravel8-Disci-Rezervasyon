@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Tedavi;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class Review extends Component
@@ -30,5 +31,14 @@ class Review extends Component
            'review'=>'required|min:10',
            'rate'=>'required'
         ]);
+        \App\Models\Review::create([
+            'product_id'=>$this->product_id,
+            'user_id'=>Auth::id(),
+            'IP'=>$_SERVER['REMOTE_ADDR'],
+            'subject'=>$this->subject,
+            'review'=>$this->review,
+        ]);
+        session()->flash('message','Rvire Send Successfuly');
+        $this->resetInput();
     }
 }

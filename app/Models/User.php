@@ -62,17 +62,13 @@ class User extends Authenticatable
     public function reviews(){
         return $this->hasMany(Review::class);
     }
-    public function shopcart(){
-        return $this->hasMany(Shopcart::class);
+    public function procces(){
+        return $this->hasMany(Procces::class);
     }
-    public function order(){
-        return $this->hasMany(Order::class);
+    public function randevu(){
+        return $this->hasMany(Randevu::class);
     }
-    public function orderitem(){
-        return $this->hasMany(Orderitem::class);
-    }
-    public function roles()
-    {
+    public function roles(){
         return $this->belongsToMany(Role::class);
     }
 }

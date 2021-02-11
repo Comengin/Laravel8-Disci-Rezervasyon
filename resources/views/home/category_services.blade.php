@@ -16,8 +16,8 @@
             <div class="container">
                 @foreach($datalist as $rs)
                 <h3 class="w3l_head">Our Services</h3>
-                <p class="w3ls_head_para">{{$rs->title}}</p>
-                <p>{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($data, $data->title)}}</p>
+                <h3 class="w3ls_head_para">{{$rs->title}}</h3>
+                <h4>{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($data, $data->title)}}</h4>
                     <div class="why-choose-agile-grids-top">
                         <div class="col-md-4">
                             <img src="{{Storage::url($rs->image)}}" alt=" " class="img-responsive" />
@@ -26,11 +26,7 @@
 
                         <div class="col-md-7 w3ls-agile-left">
                             <p>{{$rs->description}}</p>
-                            <a href="{{route('tedavi',['id'=>$data->id])}}" data-toggle="modal" data-target="#myModal1" class="read">Read More</a>
-                            <!-- Modal1 -->
-
-                            <!-- //Modal1 -->
-
+                            <a href="{{route('tedavi',['id'=>$rs->id])}}" data-toggle="modal" data-target="#myModal1" class="read">Read More</a>
                         </div>
                         <div class="clearfix"> </div></div>
                 @endforeach
