@@ -1534,12 +1534,12 @@ tokenable_id</ColNames>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="444" parent="348" name="product_id">
+    <column id="444" parent="348" name="tedavi_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="445" parent="348" name="ip">
+    <column id="445" parent="348" name="IP">
       <Position>4</Position>
       <DataType>varchar(20)|0s</DataType>
     </column>

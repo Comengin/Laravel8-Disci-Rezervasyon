@@ -27,7 +27,7 @@
                 @endguest
                 @auth
                     <li><i class="fa fa-long-arrow-right"></i><a href="{{route('myprofile')}}">My Account</a></li>
-                    <li><i class="fa fa-long-arrow-right"></i><a href="gallery">My Wishlist</a></li>
+                    <li><i class="fa fa-long-arrow-right"></i><a href="gallery">My Reviews</a></li>
                     <li><i class="fa fa-long-arrow-right"></i><a href="team">Compare</a></li>
                     <li><i class="fa fa-long-arrow-right"></i><a href="contact">Ckeckout</a></li>
                 @endauth

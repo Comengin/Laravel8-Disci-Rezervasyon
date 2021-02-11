@@ -19,14 +19,14 @@
      <div class="container-fluid dashboard-content">
          <div class="row">
              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                 <h3 class="text-center">Message Detail</h3>
+                 <h3 class="text-center">Review Detail</h3>
                  <div class="row">
                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                         <div class="section-block" id="basicform">Edit message</div>
+                         <div class="section-block" id="basicform">Edit review</div>
                          @include('home.message')
                          <div class="card">
                              <div class="card-body">
-                                 <form action="{{route('admin_message_update',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                                 <form action="{{route('admin_review_update',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                      @csrf
                                      <table class="table table-striped table-bordered first">
                                          <tr>
@@ -36,27 +36,40 @@
                                              <th>Name and Surname</th><td>{{$data->name}}</td>
                                          </tr>
                                          <tr>
-                                             <th>Email</th><td>{{$data->email}}</td>
-                                         </tr>
-                                         <tr>
-                                             <th>Phone</th><td>{{$data->phone}}</td>
+                                             <th>Tedavi</th><td>{{$data->tedavi->title}}</td>
                                          </tr>
                                          <tr>
                                              <th>Subject</th><td>{{$data->subject}}</td>
                                          </tr>
                                          <tr>
-                                             <th>Message</th><td>{{$data->message}}</td>
+                                             <th>Review</th><td>{{$data->review}}</td>
                                          </tr>
                                          <tr>
-                                             <th>Admin Note</th>
+                                             <th>Rate</th><td>{{$data->rate}}</td>
+                                         </tr>
+                                         <tr>
+                                             <th>Ip</th><td>{{$data->ip}}</td>
+                                         </tr>
+                                         <tr>
+                                             <th>Created Date</th><td>{{$data->created_at}}</td>
+                                         </tr>
+                                         <tr>
+                                             <th>Updated Date</th><td>{{$data->updated_at}}</td>
+                                         </tr>
+                                         <tr>
+                                             <th>Status</th>
                                              <td>
-                                                <textarea id="note" name="note">{{$data->note}}</textarea>
+                                                 <select name="status">
+                                                     <option selected>{{$data->status}}</option>
+                                                     <option>True</option>
+                                                     <option>False</option>
+                                                 </select>
                                              </td>
                                          </tr>
                                          <tr>
                                              <td></td>
                                              <td>
-                                                <button class="btn btn-primary" type="submit">Update Message</button>
+                                                <button class="btn btn-primary" type="submit">Update Review</button>
                                              </td>
                                          </tr>
                                      </table>

@@ -15,4 +15,7 @@ class Tedavi extends Model
     public function randevu(){
         return $this->hasMany(Randevu::class);
     }
+    public function reviews(){
+        return $this->hasMany(Review::class);
+    }
 }

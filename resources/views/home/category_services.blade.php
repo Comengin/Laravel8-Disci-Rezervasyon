@@ -28,10 +28,15 @@
                             <p>{{$rs->description}}</p>
                             <a href="{{route('tedavi',['id'=>$rs->id])}}" data-toggle="modal" data-target="#myModal1" class="read">Read More</a>
                         </div>
-                        <div class="clearfix"> </div></div>
+                        <div class="clearfix"> </div>
+                    </div>
                 @endforeach
                 <div class="clearfix"> </div>
-
+                    <div>
+                        <p class="text-uppercase"><b>Send us your review</b></p>
+                        @livewire('review',['id'=>$data->id])
+                    @livewireScripts
+                    </div>
             </div>
         </div>
     </div>

@@ -2,41 +2,36 @@
     @if(session()->has('message'))
         <div class="alert alert-success">
             {{session('message')}}
-            @endif
-
-            <form  id="form-wrap" wire:submit.prevent="store">
-                @csrf
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <label for="name">Subject</label>
-                        <input type="text" class="form-control" wire:model="subject" placeholder="Subject">
-                        @error('subject') <span class="text-danger">{{$message}}</span>@enderror
-                    </div>
-                </div>
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <label for="message">Your Message</label>
-                        <textarea  wire:model="review" cols="5" rows="2" class="form-control" placeholder="Your Message"></textarea>
-                        @error('review') <span class="text-danger">{{$message}}</span>@enderror
-                    </div>
-                </div>
-            <!--<div class="row form-group">
-                    <div class="col-md-12">
-                        <label for="message">Your Message</label>
-                        <input type="radio" value="5"  wire:model="rate" cols="10" rows="5" class="form-control" placeholder="Your Message"><label for="star5"></label>
-                        @error('review') <span class="text-danger">{{$message}}</span>@enderror
-                </div>
-            </div>-->
-                @auth
-                    <div class="row form-group">
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-primary btn-outline btn-lg" value="Save">
-                        </div>
-                    </div>
-                @else
-                    <a href="/login" class="btn btn-primary btn-outline btn-lg">For submit your review Login</a>
-                @endauth
-
-            </form>
         </div>
+    @endif
+
+    <form  id="form-wrap" wire:submit.prevent="store">
+        @csrf
+        <div class="form-group">
+            <input type="text" class="input" wire:model="subject" placeholder="Subject">
+            @error('subject') <span class="text-danger">{{$message}}</span>@enderror
+        </div>
+        <div class="form-group">
+            <textarea type="text" class="input" wire:model="review" placeholder="Your review"></textarea>
+            @error('review') <span class="text-danger">{{$message}}</span>@enderror
+        </div>
+        <div class="form-group">
+            <div class="input-rating">
+                @error('rate')<span class="text-danger">{{$message}}</span>@enderror
+                <strong class="text-uppercase">Your Rating: </strong>
+                <div class="wi-stars">
+                    <input type="radio" id="star5" wire:model="rate" value="5" /><label for="star5"></label>
+                    <input type="radio" id="star4" wire:model="rate" value="4" /><label for="star4"></label>
+                    <input type="radio" id="star3" wire:model="rate" value="3" /><label for="star3"></label>
+                    <input type="radio" id="star2" wire:model="rate" value="2" /><label for="star2"></label>
+                    <input type="radio" id="star1" wire:model="rate" value="1" /><label for="star1"></label>
+                </div>
+            </div>
+        </div>
+        @auth
+            <input type="submit" class="btn btn-success" value="Save">
+        @else
+            <a href="/login" class="btn btn-primary">For submit your review, please login</a>
+        @endauth
+    </form>
 </div>

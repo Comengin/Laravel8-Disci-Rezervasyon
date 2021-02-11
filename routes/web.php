@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProccesController;
 use App\Http\Controllers\RandevuController;
+use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -160,11 +161,20 @@ Route::middleware('auth')->prefix('admin')->group(function (){
             Route::get('userroledelete/{userid}/{roleid}',[\App\Http\Controllers\Admin\UserController::class, 'user_role_delete'])->name('admin_user_role_delete');
 
         });
+        //review
+        Route::prefix('review')->group(function () {
+            Route::get('/', [App\Http\Controllers\Admin\ReviewController::class, 'index'])->name('admin_review');
+            Route::post('/update/{id}', [App\Http\Controllers\Admin\ReviewController::class, 'update'])->name('admin_review_update');
+            Route::get('/delete/{id}', [App\Http\Controllers\Admin\ReviewController::class, 'destroy'])->name('admin_review_delete');
+            Route::get('/show/{id}', [App\Http\Controllers\Admin\ReviewController::class, 'show'])->name('admin_review_show');
+        });
     });
 });
 
 Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function () {
     Route::get('/',[UserController::class,'index'])->name('myprofile');
+    Route::get('/myreview',[UserController::class,'myreview'])->name('myreview');
+    Route::get('deletemyreview/{id}',[UserController::class, 'deletemyreview'])->name('user_review_delete');
 });
 
 Route::get('/admin/login',[HomeController::class, 'login'])->name('admin_login');

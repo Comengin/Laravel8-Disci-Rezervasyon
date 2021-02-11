@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class Review extends Component
 {
-    public $record, $subject, $review,$tedavi_id,$rate;
+    public $record, $subject,$review,$tedavi_id,$rate;
     public function mount($id)
     {
         $this->record = Tedavi::findOrFail($id);
@@ -32,13 +32,15 @@ class Review extends Component
            'rate'=>'required'
         ]);
         \App\Models\Review::create([
-            'product_id'=>$this->product_id,
+            'tedavi_id'=>$this->tedavi_id,
             'user_id'=>Auth::id(),
             'IP'=>$_SERVER['REMOTE_ADDR'],
+            'rate'=>$this->rate,
             'subject'=>$this->subject,
-            'review'=>$this->review,
+            'review'=>$this->review
+
         ]);
-        session()->flash('message','Rvire Send Successfuly');
+        session()->flash('message','Review Send Successfuly');
         $this->resetInput();
     }
 }

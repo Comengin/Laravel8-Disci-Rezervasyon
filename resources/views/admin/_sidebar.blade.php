@@ -32,6 +32,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('admin_procces')}}" ><i class="fa fa-fw fa-rocket"></i>Procces</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('admin_review')}}" ><i class="fa fa-fw fa-rocket"></i>Reviews</a>
+                    </li>
                 </ul>
             </div>
         </nav>

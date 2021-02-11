@@ -12,6 +12,9 @@
         </div>
         <div class="section">
             <div class="container">
+                <div class="col-md-2" id="aside">
+                    @include('home.usermenu')
+                </div>
                 <div class="col-md-7 w3ls-agile-left">
                     <h2> Get your free consultation </h2>
                     <h4>Book An Appointment</h4>
