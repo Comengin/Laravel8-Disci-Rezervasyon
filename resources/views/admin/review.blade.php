@@ -44,7 +44,7 @@
                                             <td>{{$rs->rate}}</td>
                                             <td>{{$rs->status}}</td>
                                             <td>{{$rs->created_at}}</td>
-                                            <td><a href="{{route('admin_review_update',['id' => $rs->id])}}"><img src="{{asset('assets/admin/images')}}/edit.png" height="25"></a></td>
+                                            <td><a href="{{route('admin_review_show',['id' => $rs->id])}}"><img src="{{asset('assets/admin/images')}}/edit.png" height="25"></a></td>
                                             <td><a href="{{route('admin_review_delete',['id' => $rs->id])}}" onclick="return confirm('Delete! Are you sure?')"><img src="{{asset('assets/admin/images')}}/trash.png" height="25"></a></td>
                                         </tr>
                                     @endforeach

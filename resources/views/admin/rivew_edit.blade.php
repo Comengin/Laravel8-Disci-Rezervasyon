@@ -22,23 +22,15 @@
                  <h3 class="text-center">Review Detail</h3>
                  <div class="row">
                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                         <div class="section-block" id="basicform">Edit review</div>
                          @include('home.message')
                          <div class="card">
                              <div class="card-body">
                                  <form action="{{route('admin_review_update',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                      @csrf
                                      <table class="table table-striped table-bordered first">
-                                         <tr rowspan="8" align="center" valign="center">
-                                             @if($rs->profile_photo_path)
-                                                 <img src="{{Storage::url($data->profile_photo_path)}}" height="300" style="border-right-radius: 10px"alt="">
-                                             @endif
-                                         </tr>
+
                                          <tr>
                                              <th>Id</th><td>{{$data->id}}</td>
-                                         </tr>
-                                         <tr>
-                                             <th>Name and Surname</th><td>{{$data->name}}</td>
                                          </tr>
                                          <tr>
                                              <th>Tedavi</th><td>{{$data->tedavi->title}}</td>
@@ -53,7 +45,7 @@
                                              <th>Rate</th><td>{{$data->rate}}</td>
                                          </tr>
                                          <tr>
-                                             <th>Ip</th><td>{{$data->ip}}</td>
+                                             <th>Ip</th><td>{{$data->IP}}</td>
                                          </tr>
                                          <tr>
                                              <th>Created Date</th><td>{{$data->created_at}}</td>

@@ -1869,7 +1869,11 @@ tokenable_id</ColNames>
       <Position>14</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <key id="521" parent="354" name="PRIMARY">
+    <column id="521" parent="354" name="count">
+      <Position>15</Position>
+      <DataType>int(15)|0s</DataType>
+    </column>
+    <key id="522" parent="354" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

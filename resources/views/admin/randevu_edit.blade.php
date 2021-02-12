@@ -62,7 +62,7 @@
                                         <tr>
                                             <td></td>
                                             <td>
-                                                <button class="btn btn-primary" type="submit">Update Review</button>
+                                                <button class="btn btn-primary" type="submit">Update Randevu</button>
                                             </td>
                                         </tr>
                                     </table>

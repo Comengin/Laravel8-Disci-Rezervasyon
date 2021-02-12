@@ -26,6 +26,7 @@
                                 <th>Time</th>
                                 <th>Date</th>
                                 <th>Status</th>
+                                <th>Note</th>
                                 <th>State</th>
                             </tr>
                             </thead>
@@ -39,6 +40,7 @@
                                     <td>{{$rs->time}}</td>
                                     <td>{{$rs->created_at}}</td>
                                     <td>{{$rs->status}}</td>
+                                    <td>{{$rs->note}}</td>
                                     <td>
                                         <a href="{{ route("user_randevu_delete",['id'=>$rs->id]) }}" onclick="return confirm('Are You Sure To Delete?')" class="btn btn-danger btn-mini">Iptal et</a>
                                     </td>

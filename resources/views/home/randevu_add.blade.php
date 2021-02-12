@@ -27,7 +27,7 @@
                                 <p>Hekim sec</p>
                                 <select name="doctor">
                                     @foreach($dctr as $rs)
-                                        <option value="{{$rs->name}}">{{$rs->name}}</option>
+                                            <option value="{{$rs->name}}">{{$rs->name}}</option>
                                     @endforeach
                                 </select>
                                 <p>Time</p>

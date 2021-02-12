@@ -19,7 +19,7 @@ class UserController extends Controller
         return view('home.user_profile');
     }
     public static function getdoctor(){
-        return  User::all()->where('id','<>','1');
+        return  User::all()->where('count','<>','1');
     }
     /**
      * Show the form for creating a new resource.
