@@ -52,7 +52,8 @@ class UserController extends Controller
     public function show(User $user,$id)
     {
         $data = User::find($id);
-        return view('admin.user_show',['data'=>$data]);
+        $datalist = Role::all()->sortBy('name');
+        return view('admin.user_show',['data'=>$data,'datalist'=>$datalist]);
     }
 
     /**

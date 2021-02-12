@@ -29,6 +29,11 @@
                                  <form action="{{route('admin_review_update',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                      @csrf
                                      <table class="table table-striped table-bordered first">
+                                         <tr rowspan="8" align="center" valign="center">
+                                             @if($rs->profile_photo_path)
+                                                 <img src="{{Storage::url($data->profile_photo_path)}}" height="300" style="border-right-radius: 10px"alt="">
+                                             @endif
+                                         </tr>
                                          <tr>
                                              <th>Id</th><td>{{$data->id}}</td>
                                          </tr>

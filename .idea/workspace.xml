@@ -19,26 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Home Products Anasayfa da Ürünlerin Gösterilmesi">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ReviewController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/rivew_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/user_reviews.blade.php" afterDir="false" />
+    <list default="true" id="440e9f44-5921-4a05-91bb-2f9870bbabeb" name="Default Changelist" comment="Reviews with Jetstream Livewire and Manage at User and Admin Panel">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/randevu_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/025d5789-bb83-4313-9e69-7c56121c0599.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProccesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProccesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RandevuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RandevuController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Review.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tedavi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tedavi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/message_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/message_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_contact.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/procces.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/procces.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/rivew_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/rivew_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user_show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user_show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/category_services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/category_services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/randevu_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/randevu_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/user_procces.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_procces.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_reviews.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/review.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -284,7 +283,8 @@
       <workItem from="1612880748177" duration="64445000" />
       <workItem from="1612990478151" duration="19962000" />
       <workItem from="1613027869009" duration="24532000" />
-      <workItem from="1613061601706" duration="6641000" />
+      <workItem from="1613061601706" duration="23967000" />
+      <workItem from="1613110217899" duration="28871000" />
     </task>
     <task id="LOCAL-00001" summary="first changing">
       <created>1607316754658</created>
@@ -573,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613005974500</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Reviews with Jetstream Livewire and Manage at User and Admin Panel">
+      <created>1613069308468</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1613069308468</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="login adding" />
     <MESSAGE value="category database adding" />
     <MESSAGE value="category adding process and deleting" />
     <MESSAGE value="edit category:&#10;category.blade.php&#10;category_edit.blade.php&#10;CategoryController.php" />
@@ -618,6 +624,7 @@
     <MESSAGE value="Tedavi Detail Hizmetler İçerik Detay Sayfası" />
     <MESSAGE value="Admin Panel User Role management update" />
     <MESSAGE value="Home Products Anasayfa da Ürünlerin Gösterilmesi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home Products Anasayfa da Ürünlerin Gösterilmesi" />
+    <MESSAGE value="Reviews with Jetstream Livewire and Manage at User and Admin Panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reviews with Jetstream Livewire and Manage at User and Admin Panel" />
   </component>
 </project>

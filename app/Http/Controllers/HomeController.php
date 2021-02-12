@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Faq;
 use App\Models\Image;
 use App\Models\Message;
+use App\Models\Randevu;
 use App\Models\Setting;
 use App\Models\Tedavi;
 use Illuminate\Http\Request;
@@ -59,6 +60,8 @@ class HomeController extends Controller
         #exit();
         return view('home.tedavi_detail',['data'=>$data,'datalist'=>$datalist]);
     }
+
+
     public function categoryservices($id){
         $datalist = Tedavi::where('category_id',$id)->get();
         $data = Category::find($id);

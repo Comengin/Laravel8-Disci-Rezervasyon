@@ -18,7 +18,7 @@
                                         <th>Name</th>
                                         <th>Tedavi türü</th>
                                         <th>Subject</th>
-                                        <th>Revıew</th>
+                                        <th>Review</th>
                                         <th>Rate</th>
                                         <th>Status</th>
                                         <th>Date</th>
@@ -31,7 +31,9 @@
                                     @foreach($datalist as $rs)
                                         <tr class="gradeX">
                                             <td>{{$rs->id}}</td>
-                                            <td>{{$rs->user->name}}</td>
+                                            <td><a href="{{route('admin_user_show',['id'=>$rs->user->id])}}" onclick="return !window.open(this.href, '','top=50 left=100 width=1100, height=700 ')">
+                                                    {{$rs->user->name}}</a>
+                                            </td>
                                             <td>
                                                 <a href="{{route('tedavi',['id'=>$rs->tedavi->id])}}" target="_blank">
                                                     {{$rs->tedavi->title}}

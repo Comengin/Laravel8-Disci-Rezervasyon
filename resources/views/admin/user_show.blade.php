@@ -14,7 +14,7 @@
 <!-- //font-awesome icons -->
 <link href="//fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-
+<title>{{$data->name}}</title>
 <div class="dashboard-wrapper">
      <div class="container-fluid dashboard-content">
          <div class="row">
@@ -27,6 +27,7 @@
                          <div class="card">
                              <div class="card-body">
                                      <table class="table table-striped table-bordered first">
+
                                          <tr>
                                              <th>Id</th><td>{{$data->id}}</td>
                                          </tr>
@@ -56,13 +57,14 @@
                                                                  <a href="{{route('admin_user_role_delete',['userid'=>$data->id,'roleid'=>$row->id])}}" onclick="return !window.open(this.href, '','top=50 left=100 width=1100, height=700 ')"></a>
                                                              </td>
                                                          </tr>
+                                                     @endforeach
                                                  </table>
                                              </td>
                                          </tr>
                                          <tr>
                                              <th>Add Roles</th>
                                              <td>
-                                                 <form role="form" action="{{route('admin_user_role_delete',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                                                 <form role="form" action="{{route('admin_user_role_add',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                                      @csrf
                                                      <select name="roleid">
                                                          @foreach($datalist as $rs)

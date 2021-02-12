@@ -8,9 +8,9 @@
             $userRoles = Auth::user()->roles->pluck('name');
         @endphp
         @if($userRoles->contains('user'))
-            <li><a href="{{route('user_procces')}}">My Procces</a></li>
+            <li><a href="{{route('user_randevu')}}">My Procces</a></li>
         @endif
-        <li><a href="">My Messages</a></li>
+        <li><a href="{{route('yenirandevual')}}">Take an appointment</a></li>
         @if($userRoles->contains('admin'))
             <li><a href="{{route('admin_home')}}" target="_blank">Admin Panel</a></li>
         @endif

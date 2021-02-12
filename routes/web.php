@@ -62,11 +62,12 @@ Route::middleware('auth')->prefix('user')->namespace('user')->group(function () 
     #Randevu
     Route::prefix('randevu')->group(function (){
         Route::get('/',[RandevuController::class, 'index'])->name('user_randevu');
-        Route::get('create', [RandevuController::class , 'create'])->name('user_randevu_add');
+        Route::get('/yenirandevual',[RandevuController::class, 'yenirandevual'])->name('yenirandevual');
+        Route::post('create', [RandevuController::class , 'create'])->name('user_randevu_add');
         Route::post('store', [RandevuController::class , 'store'])->name('user_randevu_store');
         Route::get('edit/{id}',[RandevuController::class, 'edit'])->name('user_randevu_edit');
         Route::post('update/{id}',[RandevuController::class, 'update'])->name('user_randevu_update');
-        Route::get('delete/{id}',[RandevuController::class, 'destroy'])->name('user_randevu_delete');
+        Route::get('deletemyrandevu/{id}',[RandevuController::class, 'deletemyrandevu'])->name('user_randevu_delete');
         Route::get('show',[RandevuController::class, 'show'])->name('user_randevu_show');
 
     });
@@ -137,15 +138,16 @@ Route::middleware('auth')->prefix('admin')->group(function (){
             Route::get('show',[\App\Http\Controllers\Admin\FaqController::class, 'show'])->name('admin_faq_show');
 
         });
-        #Procces
-        Route::prefix('procces')->group(function (){
-            Route::get('/',[\App\Http\Controllers\Admin\ProccesController::class, 'index'])->name('admin_procces');
-            Route::get('create', [\App\Http\Controllers\Admin\ProccesController::class , 'create'])->name('admin_procces_add');
-            Route::post('store', [\App\Http\Controllers\Admin\ProccesController::class , 'store'])->name('admin_procces_store');
-            Route::get('edit/{id}',[\App\Http\Controllers\Admin\ProccesController::class, 'edit'])->name('admin_procces_edit');
-            Route::post('update/{id}',[\App\Http\Controllers\Admin\ProccesController::class, 'update'])->name('admin_procces_update');
-            Route::get('delete/{id}',[\App\Http\Controllers\Admin\ProccesController::class, 'destroy'])->name('admin_procces_delete');
-            Route::get('show',[\App\Http\Controllers\Admin\ProccesController::class, 'show'])->name('admin_procces_show');
+        #randevu
+        Route::prefix('randevu')->group(function (){
+            Route::get('/',[\App\Http\Controllers\Admin\ProccesController::class, 'index'])->name('admin_randevu');
+            Route::get('create', [\App\Http\Controllers\Admin\ProccesController::class , 'create'])->name('admin_randevu_add');
+            Route::get('list/{status}', [\App\Http\Controllers\Admin\ProccesController::class , 'list'])->name('admin_randevu_list');
+            Route::post('store', [\App\Http\Controllers\Admin\ProccesController::class , 'store'])->name('admin_randevu_store');
+            Route::get('edit/{id}',[\App\Http\Controllers\Admin\ProccesController::class, 'edit'])->name('admin_randevu_edit');
+            Route::post('update/{id}',[\App\Http\Controllers\Admin\ProccesController::class, 'update'])->name('admin_randevu_update');
+            Route::get('delete/{id}',[\App\Http\Controllers\Admin\ProccesController::class, 'destroy'])->name('admin_randevu_delete');
+            Route::get('show/{id}',[\App\Http\Controllers\Admin\ProccesController::class, 'show'])->name('admin_randevu_show');
         });
         #User
         Route::prefix('user')->group(function (){
@@ -155,7 +157,7 @@ Route::middleware('auth')->prefix('admin')->group(function (){
             Route::get('edit/{id}',[\App\Http\Controllers\Admin\UserController::class, 'edit'])->name('admin_user_edit');
             Route::post('update/{id}',[\App\Http\Controllers\Admin\UserController::class, 'update'])->name('admin_user_update');
             Route::get('delete/{id}',[\App\Http\Controllers\Admin\UserController::class, 'destroy'])->name('admin_user_delete');
-            Route::get('show',[\App\Http\Controllers\Admin\UserController::class, 'show'])->name('admin_user_show');
+            Route::get('show/{id}',[\App\Http\Controllers\Admin\UserController::class, 'show'])->name('admin_user_show');
             Route::get('userrole/{id}',[\App\Http\Controllers\Admin\UserController::class, 'user_roles'])->name('admin_user_roles');
             Route::post('userrolestore/{id}',[\App\Http\Controllers\Admin\UserController::class, 'user_role_store'])->name('admin_user_role_add');
             Route::get('userroledelete/{userid}/{roleid}',[\App\Http\Controllers\Admin\UserController::class, 'user_role_delete'])->name('admin_user_role_delete');
@@ -164,7 +166,7 @@ Route::middleware('auth')->prefix('admin')->group(function (){
         //review
         Route::prefix('review')->group(function () {
             Route::get('/', [App\Http\Controllers\Admin\ReviewController::class, 'index'])->name('admin_review');
-            Route::post('/update/{id}', [App\Http\Controllers\Admin\ReviewController::class, 'update'])->name('admin_review_update');
+            Route::post('update/{id}', [App\Http\Controllers\Admin\ReviewController::class, 'update'])->name('admin_review_update');
             Route::get('/delete/{id}', [App\Http\Controllers\Admin\ReviewController::class, 'destroy'])->name('admin_review_delete');
             Route::get('/show/{id}', [App\Http\Controllers\Admin\ReviewController::class, 'show'])->name('admin_review_show');
         });
